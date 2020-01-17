@@ -1,0 +1,7 @@
+**
+!**/*.[jt]s?
+/artifacts/**
+/coverage/**
+/dist/**
+/node_modules/**
+/tmp/**
