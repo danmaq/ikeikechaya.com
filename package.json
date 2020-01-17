@@ -1,0 +1,27 @@
+{
+  "name": "ikeikechaya.com",
+  "version": "0.1.0",
+  "description": "Official website for ikeikechaya.com",
+  "license": "Apache-2.0",
+  "private": true,
+  "author": "danmaq",
+  "keywords": [
+    "website"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@danmaq.github.com:danmaq/ikeikechaya.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danmaq/ikeikechaya.com/issues"
+  },
+  "homepage": "https://github.com/danmaq/ikeikechaya.com#readme",
+  "scripts": {
+    "start": "echo \"Warning: no start specified\"",
+    "build": "echo \"Warning: no build specified\"",
+    "test": "echo \"Warning: no test specified\""
+  },
+  "engines": {
+    "node": ">= 13"
+  }
+}
