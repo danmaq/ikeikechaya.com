@@ -1,7 +1,9 @@
-**
-!**/*.[jt]s?
-/artifacts/**
-/coverage/**
-/dist/**
-/node_modules/**
-/tmp/**
+/artifacts/
+/coverage/
+/dist/
+/node_modules/
+/public/
+/tmp/
+LICENSE
+*.json
+*.md
