@@ -11,11 +11,9 @@ jobs:
         uses: actions/setup-node@master
         with:
           node-version: 13.x
-      - name: npm install, build, and test
-        run: |
-          npm ci
-          npm run build
-          npm test
+      - run: npm ci
+      - run: npm run build
+      - run: npm test
   deploy:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     needs:
@@ -28,7 +26,12 @@ jobs:
         uses: actions/setup-node@master
         with:
           node-version: 13.x
-      - name: npm install
-        run: |
-          npm ci
-          npm run build
+      - run: npm ci
+      - run: npm run build
+      - name: deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@master
+        with:
+          target_branch: gh-pages
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
