@@ -3,6 +3,8 @@
     "baseUrl": ".",
     "declaration": true,
     "esModuleInterop": true,
+    "jsx": "preserve",
+    "lib": ["dom"],
     "module": "commonjs",
     "moduleResolution": "node",
     "noEmit": true,
