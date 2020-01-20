@@ -17,8 +17,12 @@
   },
   "homepage": "https://github.com/danmaq/ikeikechaya.com#readme",
   "scripts": {
-    "start": "echo \"Warning: no start specified\"",
-    "build": "echo \"Warning: no build specified\"",
+    "build": "react-static build",
+    "bundle": "react-static bundle",
+    "export": "react-static export",
+    "serve": "serve dist -p 3000 -s",
+    "start": "react-static start",
+    "stage": "react-static build --staging",
     "test": "run-s test:lint",
     "test:lint": "eslint --fix './**/*' || true"
   },
