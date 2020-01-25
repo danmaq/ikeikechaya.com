@@ -8,6 +8,7 @@ import path from 'path';
 const config = {
   entry: path.resolve('src', 'index.tsx'),
   getRoutes: async () => [],
+  getSiteData: routeFlags => ({ routeFlags }),
   plugins: [
     'react-static-plugin-typescript',
     [
