@@ -8,6 +8,7 @@ import path from 'path';
 const config = {
   entry: path.resolve('src', 'index.tsx'),
   getRoutes: async () => [],
+  getSiteData: routeFlags => ({ routeFlags }),
   plugins: [
     'react-static-plugin-typescript',
     [
@@ -16,7 +17,9 @@ const config = {
     ],
     'react-static-plugin-reach-router',
     'react-static-plugin-sitemap'
-  ]
+  ],
+  siteRoot: 'http://ikeikechaya.com',
+  stagingSiteRoot: 'http://ikeikechaya-staging.netlify.com'
 };
 
 export default config;
