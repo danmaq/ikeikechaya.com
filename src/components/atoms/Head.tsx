@@ -30,7 +30,7 @@ export const DOM: React.FC<DomProps> = ({
     {author && <meta name="author" content={author} />}
     {description && <meta name="description" content={description} />}
     {keywords?.length && <meta name="keywords" content={keywords.join(',')} />}
-    {staging && <meta name="robots" content="noindex,nofollow" />}
+    {staging && <meta name="robots" content="noindex,nofollow,noarchive" />}
   </Head>
 );
 DOM.displayName = 'InnerHead';

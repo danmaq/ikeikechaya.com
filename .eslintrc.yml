@@ -47,3 +47,5 @@ settings:
         - .js
         - .ts
         - .tsx
+    typescript:
+      directory: .

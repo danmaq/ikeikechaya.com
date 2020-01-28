@@ -19,7 +19,7 @@ const config = {
     'react-static-plugin-sitemap'
   ],
   siteRoot: 'http://ikeikechaya.com',
-  stagingSiteRoot: 'http://ikeikechaya-staging.netlify.com'
+  stagingSiteRoot: 'https://ikeikechaya-staging.netlify.com'
 };
 
 export default config;
