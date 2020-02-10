@@ -1,19 +1,25 @@
+import { CssBaseline } from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/styles';
 import React from 'react';
 import { Root, Routes } from 'react-static';
-import { Router } from '@reach/router';
+import { Switch, Route } from 'react-router-dom';
+import theme from './components/theme';
+import Loading from './components/atoms/Loading';
 
-function App() {
-  return (
-    <Root>
+const App: React.FC = () => (
+  <Root>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
       <div className="content">
-        <React.Suspense fallback={<em>Loading...</em>}>
-          <Router>
-            <Routes path="*" />
-          </Router>
+        <React.Suspense fallback={<Loading />}>
+          <Switch>
+            <Route render={() => <Routes />} />
+          </Switch>
         </React.Suspense>
       </div>
-    </Root>
-  );
-}
+    </ThemeProvider>
+  </Root>
+);
+App.displayName = 'App';
 
 export default App;

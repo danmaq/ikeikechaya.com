@@ -17,7 +17,7 @@ const config = {
       'react-static-plugin-source-filesystem',
       { location: path.resolve('src', 'pages') }
     ],
-    'react-static-plugin-reach-router',
+    'react-static-plugin-react-router',
     'react-static-plugin-sitemap'
   ],
   siteRoot: 'http://ikeikechaya.com',
