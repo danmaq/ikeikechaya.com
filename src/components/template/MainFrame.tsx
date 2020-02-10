@@ -1,3 +1,4 @@
+import { Container } from '@material-ui/core';
 import React from 'react';
 import Head from '~/components/atoms/Head';
 import Footer from '~/components/organisms/Footer';
@@ -7,7 +8,9 @@ export const DOM: React.FC = ({ children }) => (
   <>
     <Head />
     <Header />
-    <h1>{children}</h1>
+    <Container component="main" maxWidth="md">
+      {children}
+    </Container>
     <Footer />
   </>
 );
