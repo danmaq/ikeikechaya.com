@@ -1,4 +1,7 @@
-import { Link, List, ListItem, ListItemText } from '@material-ui/core';
+import Link from '@material-ui/core/Link';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
 import React from 'react';
 import Article from '~/components/atoms/Article';
 import TextLink from '~/components/atoms/TextLink';
@@ -6,7 +9,6 @@ import ArticleWithHeading from '~/components/molecules/ArticleWithHeading';
 import ArticleWithImage from '~/components/molecules/ArticleWithImage';
 import FigureWithIframe from '~/components/molecules/FigureWithIframe';
 import FigureWithImages from '~/components/molecules/FigureWithImages';
-import MainFrame from '~/components/template/MainFrame';
 
 const Page: React.FC = () => {
   const googleMaps = (
@@ -18,7 +20,7 @@ const Page: React.FC = () => {
     </TextLink>
   );
   return (
-    <MainFrame>
+    <>
       <ArticleWithImage image="images/access/cont01.png">
         <Article>
           萩池々茶屋の
@@ -145,7 +147,7 @@ const Page: React.FC = () => {
         width={600}
         height={350}
       />
-    </MainFrame>
+    </>
   );
 };
 Page.displayName = 'Page';

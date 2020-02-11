@@ -4,7 +4,6 @@ import TextLink from '~/components/atoms/TextLink';
 import ArticleWithImage from '~/components/molecules/ArticleWithImage';
 import LinkList from '~/components/molecules/LinkList';
 import Slideshow from '~/components/molecules/Slideshow';
-import MainFrame from '~/components/template/MainFrame';
 
 const srcs = Array.from(
   { length: 9 },
@@ -12,7 +11,7 @@ const srcs = Array.from(
 );
 
 const Page: React.FC = () => (
-  <MainFrame>
+  <>
     <Slideshow srcs={srcs} width={680} height={250} />
     <ArticleWithImage
       align="right"
@@ -61,7 +60,7 @@ const Page: React.FC = () => (
         }
       ]}
     />
-  </MainFrame>
+  </>
 );
 Page.displayName = 'Page';
 

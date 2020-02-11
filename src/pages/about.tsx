@@ -1,16 +1,15 @@
-import { makeStyles } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
 import Article from '~/components/atoms/Article';
 import TextLink from '~/components/atoms/TextLink';
 import ArticleWithImage from '~/components/molecules/ArticleWithImage';
-import MainFrame from '~/components/template/MainFrame';
 
 const useStyles = makeStyles({ image: { height: 'auto', width: '96%' } });
 
 const Page: React.FC = () => {
   const { image } = useStyles();
   return (
-    <MainFrame>
+    <>
       <ArticleWithImage
         align="right"
         boxes={[{ height: '37%', width: '42%' }]}
@@ -67,7 +66,7 @@ const Page: React.FC = () => {
           をご覧の上、お気軽にご予約ください。お車でご来店されるお客様には無料駐車場、またノンアルコールビールをご用意しています。また、お酒を飲まれるお客様には代行のタクシーにご連絡も致しますので、お申し付けください。
         </Article>
       </ArticleWithImage>
-    </MainFrame>
+    </>
   );
 };
 Page.displayName = 'Page';

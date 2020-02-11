@@ -1,9 +1,8 @@
 import React from 'react';
-import MainFrame from '~/components/template/MainFrame';
 import FigureWithImages from '~/components/molecules/FigureWithImages';
 
 const Page: React.FC = () => (
-  <MainFrame>
+  <>
     <FigureWithImages
       images={[
         {
@@ -86,7 +85,7 @@ const Page: React.FC = () => (
         }
       ]}
     />
-  </MainFrame>
+  </>
 );
 Page.displayName = 'Page';
 
