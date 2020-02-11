@@ -12,7 +12,7 @@ interface LengthProps {
 
 export interface Props {
   className?: Parameters<typeof classNames>[number];
-  srcs?: string[];
+  srcs?: readonly string[];
   width: number;
   height: number;
 }

@@ -9,7 +9,7 @@ type UseImageAttributes = Pick<
 >;
 
 interface ImagesType {
-  images?: UseImageAttributes[];
+  images?: readonly UseImageAttributes[];
 }
 
 export type DOMProps = ImagesType &

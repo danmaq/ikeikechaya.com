@@ -21,13 +21,13 @@ export interface Item {
 
 export interface DOMProps {
   iconClassName?: string;
-  items?: Item[];
+  items?: readonly Item[];
 }
 
 export interface Props {
   className?: Parameters<typeof classNames>[number];
   cols?: number;
-  items?: Item[];
+  items?: readonly Item[];
 }
 
 export const DOM: React.FC<DOMProps> = ({ iconClassName, items }) => (
