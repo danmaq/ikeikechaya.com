@@ -2,7 +2,7 @@
 
 # ikeikechaya.com
 
-I want to modernize secretly it.
+Official website for ikeikechaya.com
 
 ## for developers
 
