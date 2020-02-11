@@ -17,10 +17,10 @@
   },
   "homepage": "https://github.com/danmaq/ikeikechaya.com#readme",
   "scripts": {
-    "build": "node --max-old-space-size=2880 $(which react-static) build",
+    "build": "node --max-old-space-size=3584 $(which react-static) build",
     "serve": "serve dist -p 3000 -s",
     "start": "node --max-old-space-size=4096 $(which react-static) start",
-    "stage": "node --max-old-space-size=2880 $(which react-static) build --staging",
+    "stage": "node --max-old-space-size=3584 $(which react-static) build --staging",
     "test": "run-s test:lint",
     "test:lint": "eslint --fix './**/*' || true"
   },
