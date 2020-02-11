@@ -9,19 +9,16 @@ import Root from './src/components/template/Root';
 const config = {
   Document: Root,
   entry: path.resolve('src', 'index.tsx'),
-  getRoutes: async () => [],
-  getSiteData: routeFlags => ({ routeFlags }),
   plugins: [
     'react-static-plugin-typescript',
     [
       'react-static-plugin-source-filesystem',
       { location: path.resolve('src', 'pages') }
     ],
-    'react-static-plugin-react-router',
+    'react-static-plugin-reach-router',
     'react-static-plugin-sitemap'
   ],
-  siteRoot: 'http://ikeikechaya.com',
-  stagingSiteRoot: 'https://ikeikechaya-staging.netlify.com'
+  siteRoot: 'http://ikeikechaya.com'
 };
 
 export default config;

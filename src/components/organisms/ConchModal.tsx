@@ -1,11 +1,8 @@
-import {
-  Button,
-  Container,
-  Drawer,
-  DrawerProps,
-  Grid,
-  makeStyles
-} from '@material-ui/core';
+import Button from '@material-ui/core/Button';
+import Container from '@material-ui/core/Container';
+import Drawer, { DrawerProps } from '@material-ui/core/Drawer';
+import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
 import Article from '~/components/atoms/Article';
 import TextLink from '~/components/atoms/TextLink';

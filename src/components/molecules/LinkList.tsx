@@ -1,13 +1,10 @@
-import {
-  Grid,
-  GridSize,
-  Link,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  makeStyles
-} from '@material-ui/core';
+import Grid, { GridSize } from '@material-ui/core/Grid';
+import Link from '@material-ui/core/Link';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import partition from 'lodash.partition';
 import hash from 'object-hash';

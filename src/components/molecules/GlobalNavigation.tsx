@@ -1,15 +1,11 @@
-import {
-  Button,
-  ButtonGroup,
-  ButtonGroupTypeMap,
-  Container,
-  makeStyles,
-  Theme
-} from '@material-ui/core';
-import { OpenInNewRounded } from '@material-ui/icons';
+import Button from '@material-ui/core/Button';
+import ButtonGroup, { ButtonGroupTypeMap } from '@material-ui/core/ButtonGroup';
+import Container from '@material-ui/core/Container';
+import { makeStyles, Theme } from '@material-ui/core/styles';
+import OpenInNewRounded from '@material-ui/icons/OpenInNewRounded';
+import { Link as RouterLink } from '@reach/router';
 import classNames from 'classnames';
 import React from 'react';
-import { Link as RouterLink } from 'react-router-dom';
 import getLinkAttributes from '~/utils/getLinkAttributes';
 
 // TODO: HERE CODES ARE NOT ELEGANT, SO REFACTOR ME :/
