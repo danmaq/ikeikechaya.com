@@ -7,11 +7,14 @@ import { Link as RouterLink } from '@reach/router';
 import React from 'react';
 import Conch from '~/components/atoms/Conch';
 import GlobalNavigation from '~/components/molecules/GlobalNavigation';
+import { headerData, headerData2 } from '~/utils/globalNavigationSource';
 import ConchModal from './ConchModal';
 
 export interface DOMProps {
   className?: string;
   couponClassName?: string;
+  gridItemClassName?: string;
+  headingClassName?: string;
   logoClassName?: string;
   onClickConch?: () => void;
   onCloseModal?: () => void;
@@ -21,6 +24,8 @@ export interface DOMProps {
 export const DOM: React.FC<DOMProps> = ({
   className,
   couponClassName,
+  gridItemClassName,
+  headingClassName,
   logoClassName,
   onClickConch,
   onCloseModal,
@@ -29,12 +34,13 @@ export const DOM: React.FC<DOMProps> = ({
   <>
     <AppBar component="header" className={className} position="static">
       <Container maxWidth="md">
-        <Grid container>
-          <Grid item xs={4}>
-            <h1 className={logoClassName}>
+        <Grid container alignContent="center" justify="center">
+          <Grid className={gridItemClassName} item md={3} sm={4} xs={10}>
+            <h1 className={headingClassName}>
               <RouterLink to="/">
                 <img
                   alt="萩池々茶屋"
+                  className={logoClassName}
                   src="images/header/logo.png"
                   width={233}
                   height={52}
@@ -42,10 +48,10 @@ export const DOM: React.FC<DOMProps> = ({
               </RouterLink>
             </h1>
           </Grid>
-          <Grid item xs={1}>
+          <Grid className={gridItemClassName} item sm={1} xs={2}>
             <Conch action={onClickConch} />
           </Grid>
-          <Grid item xs={6}>
+          <Grid className={gridItemClassName} item md={8} sm={7} xs={12}>
             <Link
               className={couponClassName}
               component={RouterLink}
@@ -56,9 +62,9 @@ export const DOM: React.FC<DOMProps> = ({
               </span>
               お得なクーポン情報はコチラ！
             </Link>
-            <GlobalNavigation />
+            <GlobalNavigation source={headerData} />
+            <GlobalNavigation source={headerData2} />
           </Grid>
-          <Grid item xs={1} />
         </Grid>
       </Container>
       <ConchModal onClose={onCloseModal} open={!!openModal} />
@@ -68,8 +74,10 @@ export const DOM: React.FC<DOMProps> = ({
 DOM.displayName = 'HeaderDOM';
 
 const useHeaderStyles = makeStyles(() => ({
-  logo: { margin: 0 },
   coupon: { color: 'white', fontWeight: 700 },
+  gridItem: { margin: 'auto' },
+  heading: { margin: 0 },
+  logo: { width: '100%', height: 'auto' },
   root: {
     backgroundImage: 'url("images/header/bg.jpg")',
     fontSize: '110%',
@@ -78,12 +86,14 @@ const useHeaderStyles = makeStyles(() => ({
 }));
 
 export const Header: React.FC = () => {
-  const { logo, coupon, root } = useHeaderStyles();
+  const { coupon, gridItem, heading, logo, root } = useHeaderStyles();
   const [openModal, setOpenModal] = React.useState(false);
   return (
     <DOM
       className={root}
       couponClassName={coupon}
+      gridItemClassName={gridItem}
+      headingClassName={heading}
       logoClassName={logo}
       onClickConch={React.useCallback(() => setOpenModal(v => !v), [])}
       onCloseModal={React.useCallback(() => setOpenModal(false), [])}
