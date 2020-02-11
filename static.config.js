@@ -9,6 +9,8 @@ import Root from './src/components/template/Root';
 const config = {
   Document: Root,
   entry: path.resolve('src', 'index.tsx'),
+  extractCssChunks: true,
+  inlineCss: true,
   plugins: [
     'react-static-plugin-typescript',
     [
