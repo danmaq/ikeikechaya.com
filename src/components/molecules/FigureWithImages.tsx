@@ -1,4 +1,4 @@
-import { makeStyles } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import hash from 'object-hash';
 import React from 'react';

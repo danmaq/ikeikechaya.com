@@ -1,4 +1,5 @@
-import { Box, makeStyles, Theme } from '@material-ui/core';
+import Box from '@material-ui/core/Box';
+import { makeStyles, Theme } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import hash from 'object-hash';
 import React from 'react';
