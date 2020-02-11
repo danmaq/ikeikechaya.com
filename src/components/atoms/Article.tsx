@@ -1,5 +1,6 @@
-import { makeStyles, Typography, TypographyTypeMap } from '@material-ui/core';
+import Typography, { TypographyTypeMap } from '@material-ui/core/Typography';
 import { DefaultComponentProps } from '@material-ui/core/OverridableComponent';
+import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import React from 'react';
 

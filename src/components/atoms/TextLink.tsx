@@ -1,6 +1,6 @@
-import { Link, LinkTypeMap } from '@material-ui/core';
+import Link, { LinkTypeMap } from '@material-ui/core/Link';
 import { DefaultComponentProps } from '@material-ui/core/OverridableComponent';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink } from '@reach/router';
 import classNames from 'classnames';
 import React from 'react';
 import getLinkAttributes from '~/utils/getLinkAttributes';
