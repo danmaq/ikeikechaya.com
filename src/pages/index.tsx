@@ -1,14 +1,43 @@
+import Hidden from '@material-ui/core/Hidden';
 import React from 'react';
 import Article from '~/components/atoms/Article';
 import TextLink from '~/components/atoms/TextLink';
 import ArticleWithImage from '~/components/molecules/ArticleWithImage';
-import LinkList from '~/components/molecules/LinkList';
+import LinkList, { Item } from '~/components/molecules/LinkList';
 import Slideshow from '~/components/molecules/Slideshow';
 
 const srcs = Array.from(
   { length: 9 },
   (__, i) => `/images/home/slideshow${`${i}`.padStart(2, '0')}.jpg`
 );
+
+const source: Item[] = [
+  {
+    caption: '越ヶ浜厳島神社',
+    detail: 'お払い、商売繁盛の祈祷は予約制です。こちらからどうぞ！',
+    href: 'http://www.itukushimajinjya.com/',
+    icon: '/images/home/link_shrine.png',
+    width: 81,
+    height: 81
+  },
+  {
+    caption: '萩・椿まつり',
+    detail:
+      '当店は萩・椿まつりを応援しています。店舗に椿マークを愛用しています。',
+    href: 'http://www.hagishi.com/search/detail.php?d=900047',
+    icon: '/images/home/link_tsubaki.png',
+    width: 81,
+    height: 81
+  },
+  {
+    caption: '明神池提携ホテル',
+    detail: '当店は萩観光ホテルと提携しています。',
+    href: 'http://www.hagikan.com/',
+    icon: '/images/home/link_hotel.jpg',
+    width: 200,
+    height: 159
+  }
+];
 
 const Page: React.FC = () => (
   <>
@@ -31,35 +60,12 @@ const Page: React.FC = () => (
         は、山口県萩市越ヶ浜明神池にある2010年度梅貝水揚高日本一の漁船網元です。東京築地、金沢、名古屋、北陸富山、新潟、秋田、大阪、広島、下関、福岡などの卸市場と取引をしております。確かな品質・味をお約束いたします。
       </Article>
     </ArticleWithImage>
-    <LinkList
-      items={[
-        {
-          caption: '越ヶ浜厳島神社',
-          detail: 'お払い、商売繁盛の祈祷は予約制です。こちらからどうぞ！',
-          href: 'http://www.itukushimajinjya.com/',
-          icon: '/images/home/link_shrine.png',
-          width: 81,
-          height: 81
-        },
-        {
-          caption: '萩・椿まつり',
-          detail:
-            '当店は萩・椿まつりを応援しています。店舗に椿マークを愛用しています。',
-          href: 'http://www.hagishi.com/search/detail.php?d=900047',
-          icon: '/images/home/link_tsubaki.png',
-          width: 81,
-          height: 81
-        },
-        {
-          caption: '明神池提携ホテル',
-          detail: '当店は萩観光ホテルと提携しています。',
-          href: 'http://www.hagikan.com/',
-          icon: '/images/home/link_hotel.jpg',
-          width: 200,
-          height: 159
-        }
-      ]}
-    />
+    <Hidden only="xs">
+      <LinkList cols={2} items={source} />
+    </Hidden>
+    <Hidden smUp>
+      <LinkList cols={1} items={source} />
+    </Hidden>
   </>
 );
 Page.displayName = 'Page';
