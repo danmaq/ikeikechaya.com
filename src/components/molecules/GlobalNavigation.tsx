@@ -38,10 +38,10 @@ export const DOM: React.FC<DOMProps> = ({ children, className, group }) => (
 DOM.displayName = 'GlobalNavigation';
 
 const useButtonStyles = makeStyles({
-  externalIcon: { fontSize: '90%' },
+  externalIcon: { fontSize: '80%' },
   root: (footer: boolean) => ({
     fontSize: '100%',
-    padding: footer ? '0 1.2rem' : '0.1rem 0.3rem'
+    padding: footer ? '0 1.2rem' : '0.2rem 0.3rem'
   })
 });
 
