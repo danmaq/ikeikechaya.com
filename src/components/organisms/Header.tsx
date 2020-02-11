@@ -1,6 +1,10 @@
-import { AppBar, Container, Grid, Link, makeStyles } from '@material-ui/core';
+import AppBar from '@material-ui/core/AppBar';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+import Link from '@material-ui/core/Link';
+import { makeStyles } from '@material-ui/core/styles';
+import { Link as RouterLink } from '@reach/router';
 import React from 'react';
-import { Link as RouterLink } from 'react-router-dom';
 import Conch from '~/components/atoms/Conch';
 import GlobalNavigation from '~/components/molecules/GlobalNavigation';
 import ConchModal from './ConchModal';
