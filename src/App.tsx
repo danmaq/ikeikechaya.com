@@ -19,17 +19,19 @@ const App: React.FC = () => (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <div className="content">
-        <Header />
-        <Container component="main" maxWidth="md">
-          <React.Suspense fallback={<Loading />}>
-            <div className={useStyles().innerContainer}>
-              <Router>
-                <Routes path="*" />
-              </Router>
-            </div>
-          </React.Suspense>
-        </Container>
-        <Footer />
+        <React.Suspense fallback={<Loading />}>
+          <Header />
+          <Container
+            className={useStyles().innerContainer}
+            component="main"
+            maxWidth="md"
+          >
+            <Router>
+              <Routes path="*" />
+            </Router>
+          </Container>
+          <Footer />
+        </React.Suspense>
       </div>
     </ThemeProvider>
   </Root>
