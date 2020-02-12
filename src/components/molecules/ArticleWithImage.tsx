@@ -1,7 +1,6 @@
 import Box from '@material-ui/core/Box';
 import { makeStyles, Theme } from '@material-ui/core/styles';
 import classNames from 'classnames';
-import hash from 'object-hash';
 import React from 'react';
 
 export interface DOMProps {
@@ -32,8 +31,8 @@ export const DOM: React.FC<DOMProps> = ({
   children
 }) => (
   <section className={className}>
-    {boxStyles?.map(({ children: boxChildren, ...style }) => (
-      <Box className={boxesClassName} key={hash(style)} style={style}>
+    {boxStyles?.map(({ children: boxChildren, ...style }, index) => (
+      <Box className={boxesClassName} key={index} style={style}>
         {boxChildren}
       </Box>
     ))}
