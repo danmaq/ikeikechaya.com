@@ -61,7 +61,10 @@ const Root = ({ Body, children, Head, state }) => (
         href="https://fonts.googleapis.com/icon?family=Material+Icons"
       />
     </Head>
-    <Body>{children}</Body>
+    <Body>
+      {children}
+      <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js" />
+    </Body>
   </html>
 );
 Root.displayName = 'Root';
