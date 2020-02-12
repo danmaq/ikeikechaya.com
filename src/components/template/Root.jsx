@@ -26,6 +26,7 @@ const Root = ({ Body, children, Head, state }) => (
       {(state.stage === 'prod' && !state.staging) || (
         <meta name="robots" content="noindex,nofollow,noarchive" />
       )}
+      <meta name="theme-color" content="#0C0C88" />
       <meta name="author" content="Shuhei Nomura (@danmaq)" />
       <meta
         name="description"
