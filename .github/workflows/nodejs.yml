@@ -28,7 +28,7 @@ jobs:
           node-version: 13.x
       - run: npm ci
       - run: npm run build
-      - name: copy file via ssh password
+      - name: copy files via ssh
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
@@ -37,3 +37,27 @@ jobs:
           port: ${{ secrets.PORT }}
           source: 'dist'
           target: 'web/vhosts/ikeikechaya.com.staging'
+      - name: remove the old backup
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: rm -rf web/vhosts/ikeikechaya.com.*
+      - name: backup
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: mv web/vhosts/ikeikechaya.com web/vhosts/ikeikechaya.com.old
+      - name: migrate
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: mv web/vhosts/ikeikechaya.com.staging/dist web/vhosts/ikeikechaya.com
