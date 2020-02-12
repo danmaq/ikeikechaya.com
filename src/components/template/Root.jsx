@@ -63,7 +63,10 @@ const Root = ({ Body, children, Head, state }) => (
     </Head>
     <Body>
       {children}
-      <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js" />
+      <script
+        crossOrigin="anonymous"
+        src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.includes%2CPromise"
+      />
     </Body>
   </html>
 );
