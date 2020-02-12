@@ -33,7 +33,7 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          passphrase: ${{ secrets.ID_RSA }}
+          password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           source: 'dist'
           target: 'web/vhosts/ikeikechaya.com.staging'
