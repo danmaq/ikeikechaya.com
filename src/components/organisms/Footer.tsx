@@ -1,6 +1,5 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import Divider from '@material-ui/core/Divider';
 import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import { makeStyles } from '@material-ui/core/styles';
@@ -11,11 +10,12 @@ import { footerData } from '~/utils/globalNavigationSource';
 
 const useStyles = makeStyles({
   copy: { fontSize: '100%' },
+  divider: { border: '1px solid rgb(217, 217, 217)', margin: 0 },
   innerContainer: { paddingTop: '1rem' }
 });
 
 export const Footer: React.FC = () => {
-  const { copy, innerContainer } = useStyles();
+  const { copy, divider, innerContainer } = useStyles();
   const conch = (
     <Conch
       action="https://www.google.co.jp/search?tbm=isch&amp;q=%E6%A2%85%E8%B2%9D"
@@ -32,7 +32,7 @@ export const Footer: React.FC = () => {
   const nav = <GlobalNavigation footer source={footerData} />;
   return (
     <Container component="footer" maxWidth="md">
-      <Divider />
+      <hr className={divider} />
       <Hidden only="xs">
         <Grid className={innerContainer} container>
           <Grid item xs={11}>

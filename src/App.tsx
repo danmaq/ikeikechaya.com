@@ -1,14 +1,13 @@
 import Container from '@material-ui/core/Container';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import { makeStyles } from '@material-ui/core/styles';
-import ThemeProvider from '@material-ui/styles/ThemeProvider';
+import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import { Router } from '@reach/router';
 import React from 'react';
 import { Root, Routes } from 'react-static';
-import theme from './components/theme';
 import Loading from './components/atoms/Loading';
 import Footer from './components/organisms/Footer';
 import Header from './components/organisms/Header';
+import theme from './theme';
 
 const useStyles = makeStyles({
   innerContainer: { paddingTop: '2rem' }

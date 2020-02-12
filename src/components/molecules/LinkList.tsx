@@ -7,7 +7,6 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import partition from 'lodash.partition';
-import hash from 'object-hash';
 import React from 'react';
 
 export interface Item {
@@ -83,8 +82,9 @@ const LinkList: React.FC<Props> = ({ className, ...rest }) => {
   const { splitted, width } = getListAndWidth(rest);
   return (
     <Grid className={classNames(className)} container>
-      {splitted.map(item => (
-        <Grid key={hash(item)} item xs={width}>
+      {splitted.map((item, index) => (
+        // eslint-disable-next-line react/no-array-index-key
+        <Grid key={index} item xs={width}>
           {DOM({ iconClassName, items: item })}
         </Grid>
       ))}

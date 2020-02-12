@@ -2,7 +2,6 @@ import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import ButtonGroup, { ButtonGroupTypeMap } from '@material-ui/core/ButtonGroup';
 import { makeStyles, Theme } from '@material-ui/core/styles';
-import OpenInNewRounded from '@material-ui/icons/OpenInNewRounded';
 import { Link as RouterLink } from '@reach/router';
 import classNames from 'classnames';
 import React from 'react';
@@ -38,7 +37,6 @@ export const DOM: React.FC<DOMProps> = ({ children, className, group }) => (
 DOM.displayName = 'GlobalNavigation';
 
 const useButtonStyles = makeStyles({
-  externalIcon: { fontSize: '80%' },
   root: (footer: boolean) => ({
     fontSize: '100%',
     padding: footer ? '0 1.2rem' : '0.2rem 0.3rem'
@@ -55,7 +53,7 @@ const renderButtons = ({
   footer,
   source
 }: Pick<Props, 'footer' | 'source'>): React.ReactNodeArray | undefined => {
-  const { externalIcon, root } = useButtonStyles(!!footer);
+  const { root } = useButtonStyles(!!footer);
   const variant: Variant = footer ? 'text' : 'contained';
   return source?.map(([href, children]) => {
     const { absolute, rel, target } = getLinkAttributes(href);
@@ -71,11 +69,6 @@ const renderButtons = ({
         variant={variant}
       >
         {children}
-        {absolute && (
-          <span role="img" aria-label="Red Circle">
-            <OpenInNewRounded className={externalIcon} />
-          </span>
-        )}
       </Button>
     );
   });

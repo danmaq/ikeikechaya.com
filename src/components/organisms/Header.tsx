@@ -1,7 +1,6 @@
 import AppBar from '@material-ui/core/AppBar';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import Toolbar from '@material-ui/core/Toolbar';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link as RouterLink } from '@reach/router';
 import React from 'react';
@@ -32,45 +31,43 @@ export const DOM: React.FC<DOMProps> = ({
 }) => (
   <>
     <AppBar component="header" className={className} position="static">
-      <Toolbar>
-        <Container maxWidth="md">
-          <Grid alignContent="center" container justify="center">
-            <Grid className={gridItemClassName} item sm={3} xs={10}>
-              <h1 className={headingClassName}>
-                <RouterLink to="/">
-                  <img
-                    alt="萩池々茶屋"
-                    className={logoClassName}
-                    src="images/header/logo.png"
-                    width={233}
-                    height={52}
-                  />
-                </RouterLink>
-              </h1>
-            </Grid>
-            <Grid className={gridItemClassName} item sm={1} xs={2}>
-              <Conch action={onClickConch} />
-            </Grid>
-            <Grid className={gridItemClassName} item sm={8} xs={12}>
-              <Grid alignContent="center" container justify="center">
-                <Grid className={gridItemClassName} item sm={8} xs={12}>
-                  <GlobalNavigation source={headerData} />
-                </Grid>
-                <Grid
-                  className={gridItemClassName}
-                  item
-                  sm={4}
-                  xs={12}
-                  style={{ textAlign: 'right' }}
-                >
-                  <GlobalNavigation source={headerData2} />
-                </Grid>
+      <Container maxWidth="md">
+        <Grid alignContent="center" container justify="center">
+          <Grid className={gridItemClassName} item sm={3} xs={10}>
+            <h1 className={headingClassName}>
+              <RouterLink to="/">
+                <img
+                  alt="萩池々茶屋"
+                  className={logoClassName}
+                  src="images/header/logo.png"
+                  width={233}
+                  height={52}
+                />
+              </RouterLink>
+            </h1>
+          </Grid>
+          <Grid className={gridItemClassName} item sm={1} xs={2}>
+            <Conch action={onClickConch} />
+          </Grid>
+          <Grid className={gridItemClassName} item sm={8} xs={12}>
+            <Grid alignContent="center" container justify="center">
+              <Grid className={gridItemClassName} item sm={8} xs={12}>
+                <GlobalNavigation source={headerData} />
+              </Grid>
+              <Grid
+                className={gridItemClassName}
+                item
+                sm={4}
+                xs={12}
+                style={{ textAlign: 'right' }}
+              >
+                <GlobalNavigation source={headerData2} />
               </Grid>
             </Grid>
           </Grid>
-        </Container>
-        <ConchModal onClose={onCloseModal} open={!!openModal} />
-      </Toolbar>
+        </Grid>
+      </Container>
+      <ConchModal onClose={onCloseModal} open={!!openModal} />
     </AppBar>
   </>
 );
