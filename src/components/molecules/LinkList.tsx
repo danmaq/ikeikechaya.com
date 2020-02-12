@@ -30,7 +30,7 @@ export interface Props {
 }
 
 export const DOM: React.FC<DOMProps> = ({ iconClassName, items }) => (
-  <List>
+  <List component="section">
     {items?.map(item => (
       <ListItem
         component={Link}
