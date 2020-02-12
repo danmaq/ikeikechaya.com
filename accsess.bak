@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="9f28bd124221bcb5" name="y-key"/>
+<meta content="EYCxByEbK1022IJuw0n02MKiiSNDOjLPHoAdmpO0mKM" name="google-site-verification"/>
+<meta content="uFDAqcIHu44EC4Fnw5dfDQRx3UrbY+FtONeiafAkXeo=" name="verify-v1"/>
+<link href="css/accsess.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="img/favicon.ico" />
+
+<meta http-equiv="description" content="萩池々茶屋は、萩越ヶ浜の漁師 第五良栄丸が経営するレストランです。 魚介類を産地から都心部に直送する前に、漁船より直接水揚げするため、鮮度の良い海産物が召し上がれます。 萩池々茶屋は、明神池が眺望できるお店です。萩の地域活性化に貢献することを企業理念としております。"/>
+<meta http-equiv="keywords" content="萩池々茶屋, 池々茶屋, 幻の魚, 幻の貝, 萩の梅貝,萩いけいけ, 萩のバイ貝,萩,ランチ,ディナー,食事,梅貝,明神池,越ケ浜,笠山"/>
+<title>萩池々茶屋</title>
+<script type="text/javascript" src="javascript/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="javascript/tips.js"></script>
+<script type="text/javascript" src="javascript/ikeike_home.js"></script>
+</head>
+
+<body onload="MM_preloadImages('img/menu04_02.gif','img/menu03_02.gif','img/menu02_02.gif','img/menu01_02.gif','img/baigai_over.gif','img/baigai02_over.gif')">
+
+<div id="header">
+  <h1 id="main_logo"><a href="index.html"><img src="img/main_rogo.gif"  height="52" width="233" alt="萩池々茶屋"  border="none"/></a></h1>
+  <div id="kai"><a href="http://www.daigoryoeimaru.co.jp/photo.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('bai_gai','','img/baigai_over.gif',1)" target="_blank" ><img src="img/baigai.gif" alt="バイ貝" name="bai_gai" width="40" height="40" border="0" id="bai_gai" /></a></div>
+  <div id="to_coupon"><a href="accsess.html#cont03" target="_blank" ><img src="img/to_coupon_info.gif" height="14" width="203" alt="クーポン情報" border="none"/></a></div>
+  <div id="menu">
+   <ul id="me">
+    <li class="menu_list"><a href="accsess.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('menu04','','img/menu04_02.gif',1)"><img src="img/menu04.gif" alt="ご予約・アクセス" 
+    name="ご予約・アクセス" width="120" height="24" border="0" id="menu04" /></a></li>
+    <li class="menu_list"><a href="menu.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('メニュー','','img/menu03_02.gif',1)"><img src="img/menu03.gif" alt="メニュー" name="メニュー" width="66" height="24" border="0" id="メニュー" /></a></li>
+    <li class="menu_list"><a href="about.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('お店について','','img/menu02_02.gif',1)"><img src="img/menu02.gif" alt="お店について" name="お店について" width="90" height="24" border="0" id="お店について" /></a></li>
+    <li class="menu_list"><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('ホーム','','img/menu01_02.gif',1)"><img src="img/menu01.gif" alt="ホーム" name="ホーム" width="54" height="24" border="0" id="ホーム" /></a></li>
+  </ul>
+  </div>
+  <!--header--></div>
+  
+  <div id="main">
+    <div id="cont01"><img src="img_accsess/cont01.gif" border="noen" width="682" height="36"/>
+    <div class="text01">萩池々茶屋の夜のお食事は、ご予約の必要がございます。（ランチタイムのご予約は必要ありません。）社内行事の飲み会やお誕生日会等、ご都合・ご予算に合わせたお料理をご提供致します。また、お料理の好みや行事の雰囲気等、ご要望がありましたらお気軽にお申し付けください。<br/>下記電話番号よりご予約頂けます。お気軽にお電話ください。</div>
+    <div><p class="text02">コースのご予約</p><p class="text01">和食漁師料理か地中海イタリア漁師料理のどちらかをお選びください。４３００円のコースと５８００円のコースをご用意しております。</p><br/>
+    <p class="text01">　４３００円：季節のコース</p>
+    <p class="text01">　５８００円：特別コース</p><br/>
+<p  class="text01">５８００円のコースは、萩池々茶屋の真髄を味わう特別コースとなります。前菜のソース、下地作成からメニュー全ての細部に渡って、選りすぐりの食材を使います。料理品のバリエーションも増えますので、通常コースよりもシェフの味をご堪能いただけます。</p>
+    </div>
+    <div><p class="text02">コース以外のご予約</p>
+    <p class="text01">夜のご予約はコースだけでなくアラカルト（単品）のみのご予約でも受け付けております。おつまみ一品から居酒屋のようにお楽しみください。アラカルトのみのご予約の場合は、当日のお電話でもご予約頂けます。お気軽にご予約ください。</p>
+    </div>
+    <div><p class="text02">ランチのご予約</p><p class="text01">当店ではランチのご予約も受付ておりますが、当店は観光地に立地するため、観光シーズン中はランチ予約はできない場合がございます。予め、ご容赦下さいます様宜しくお願い致します。</p>
+    </div>
+<!--cont01--></div>
+    
+    <div id="cont02"><img src="img_accsess/cont02.gif" border="none" height="34" width="682"/>
+   
+    <div>
+    <p class="text02">電話番号</p>
+    <p class="text01">0838-21-7111 　　　  ご予約はこちらの電話番号にお電話ください！</p>
+    </div>
+    
+    <div>
+    <p class="text02">営業時間</p>
+    <p class="text01">11:00 〜 18:00<br/>18:00 〜 21:00 （要予約）</p><br/>
+    <p class="text01">火曜定休日　　※火曜日が祝日の場合は水曜日がお休みとなります。</p><br/>
+    <p class="text01">15：00 〜 18:00はお食事とカフェの併用となっております。カフェタイムにご用意するコーヒーセットは、厳選された豆を使用したコーヒー又は各種ドリンクとデザートのセットで、700円となっております。デザートは萩旬の果物のパンナコッタ、タピオカ夏みかん等、当日に決まります。事前にデザートメニューをお知りになりたい方は、店舗までまでお問い合わせ下さい。</p>
+    </div>
+    
+   <div>
+    <p class="text02">座席・駐車場</p>
+    <p class="text01">座敷：２０席</p>
+    <p class="text01">座敷・テーブル総座席数：３７席</p>
+    <p class="text01">無料駐車場：６台</p>
+    <p class="text01">有料駐車場：５台　　大型車駐車場：２台　　　　※駐車料金還元クーポンをご用意しています。</p>
+    </div>
+    
+     <div>
+    <p class="text02">所在地</p>
+    <p class="text01">山口県萩市大字椿東6450の1 明神池入り口 </p>
+    <p id="text03">道に迷われたり、お店の場所が分からない場合は、お気軽にお電話ください。</p>
+    <span id="map01"><img src="img_accsess/map.jpg" alt="地図" height="539" width="600" border="none"/></span>    </div>
+
+<!--cont02--></div>
+
+<!--main--></div>
+
+<div id="cont03"><p><img src="img_accsess/cont03.gif" width="682" height="48"/></p>
+   <p class="text01">萩池々茶屋では、只今２種類のクーポンをご用意しております。下にある赤枠のクーポンを印刷し、当店までお持ちください。尚、２種類のクーポンの併用は出来ませんので、予め、ご容赦ください。ご不明な点等がありましたら、ご連絡ください。</p>
+   <div id="print01"><img src="img_accsess/coupon01.gif" alt="駐車場料金還元クーポン" height="350" width="510"/></div>
+   <div id="print02"><img src="img_accsess/coupon02.gif" alt="飲酒運転撲滅クーポン" height="350" width="510"/></div>
+   <form><input type="image" src="img_accsess/btn.gif" alt="印刷ボタン" class="printbtn01" onclick="window.print();" /></form>
+  <!--cnt03--></div>
+    
+    
+   
+<div id="footer">
+      
+<ul>
+          <li><a href="index.html">ホーム</a></li>
+           <li><a href="about.html">お店について</a></li>
+           <li><a href="menu.html">メニュー</a></li>
+           <li><a href="accsess.html">ご予約・アクセス</a></li>
+           <li><a href="http://www.chuosuisan.com/">会社概要</a></li>
+        </ul>
+              <div id="omake"><a href="http://www.google.co.jp/images?um=1&amp;hl=ja&amp;safe=off&amp;rlz=1G1GGLQ_JAJP264&amp;biw=1868&amp;bih=1017&amp;tbs=isch%3A1&amp;sa=1&amp;q=%E6%A2%85%E8%B2%9D&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image29','','img/baigai02_over.gif',1)" target="_blank"><img src="img/baigai02.gif" alt="梅貝" name="Image29" width="40" height="40" border="0" id="Image29" /></a></div>
+    
+    <p>Copyright © 2011 daigoryoeimaru Co.,Ltd. All rights reserved</p>
+    <p><a href="http://www.youtube.com/user/HagiCrazyDog" target="_blank" class="youtube">萩池々茶屋</a></p>
+<!--footer--></div>
+
+<div class="tooltip">
+  <img src="img/tip01.jpg" alt="梅貝について" height="815" width="450" class="tooltip01"  />
+  <img src="img/tooltipFoot.gif" alt=""  class="tooltipFoot"/>
+</div>
+
+
+  
+</body>
+</html>

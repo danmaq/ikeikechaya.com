@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="9f28bd124221bcb5" name="y-key"/>
+<meta content="EYCxByEbK1022IJuw0n02MKiiSNDOjLPHoAdmpO0mKM" name="google-site-verification"/>
+<meta content="uFDAqcIHu44EC4Fnw5dfDQRx3UrbY+FtONeiafAkXeo=" name="verify-v1"/>
+<link href="css/about.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="img/favicon.ico" />
+<meta http-equiv="description" content="萩池々茶屋は、萩越ヶ浜の漁師 第五良栄丸が経営するレストランです。 魚介類を産地から都心部に直送する前に、漁船より直接水揚げするため、鮮度の良い海産物が召し上がれます。 萩池々茶屋は、明神池が眺望できるお店です。萩の地域活性化に貢献することを企業理念としております。"/>
+<meta http-equiv="keywords" content="萩池々茶屋, 池々茶屋, 幻の魚, 幻の貝, 萩の梅貝,萩いけいけ, 萩のバイ貝,萩,ランチ,ディナー,食事,梅貝,明神池,越ケ浜,笠山"/>
+<title>萩池々茶屋</title>
+<script type="text/javascript" src="javascript/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="javascript/tips.js"></script>
+<script type="text/javascript" src="javascript/ikeike_home.js"></script>
+</head>
+
+<body onload="MM_preloadImages('img/menu04_02.gif','img/menu03_02.gif','img/menu02_02.gif','img/menu01_02.gif','img/baigai_over.gif','img/baigai02_over.gif')">
+
+<div id="header">
+  <h1 id="main_logo"><a href="index.html"><img src="img/main_rogo.gif"  height="52" width="233" alt="萩池々茶屋" border="none" /></a></h1>
+  <div id="kai"><a href="http://www.daigoryoeimaru.co.jp/photo.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('bai_gai','','img/baigai_over.gif',1)" target="_blank" ><img src="img/baigai.gif" alt="バイ貝" name="bai_gai" width="40" height="40" border="0" id="bai_gai" /></a></div>
+  <div id="to_coupon"><a href="accsess.html#cont03" target="_blank" ><img src="img/to_coupon_info.gif" height="14" width="203" alt="クーポン情報" border="none"/></a></div>
+  <div id="menu">
+   <ul id="me">
+    <li class="menu_list"><a href="accsess.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('menu04','','img/menu04_02.gif',1)"><img src="img/menu04.gif" alt="ご予約・アクセス" 
+    name="ご予約・アクセス" width="120" height="24" border="0" id="menu04" /></a></li>
+    <li class="menu_list"><a href="menu.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('メニュー','','img/menu03_02.gif',1)"><img src="img/menu03.gif" alt="メニュー" name="メニュー" width="66" height="24" border="0" id="メニュー" /></a></li>
+    <li class="menu_list"><a href="about.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('お店について','','img/menu02_02.gif',1)"><img src="img/menu02.gif" alt="お店について" name="お店について" width="90" height="24" border="0" id="お店について" /></a></li>
+    <li class="menu_list"><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('ホーム','','img/menu01_02.gif',1)"><img src="img/menu01.gif" alt="ホーム" name="ホーム" width="54" height="24" border="0" id="ホーム" /></a></li>
+  </ul>
+  </div>
+  <!--header--></div>
+  <div id="main">
+    <div id="cont01">
+      <p id="text01">魚は鮮度が命。萩池々茶屋は萩の漁師が経営していますので、水揚げされたばかりの新鮮な魚介類を、ベストのタイミングでお客さまへお出しすることができます。当店を経営しております<a href="http://www.daigoryoeimaru.co.jp/" target="_blank" class="info_link02">第五良栄丸</a>は、松方弘樹さんが３２５Kgの大きなマグロを吊り上げた事でも有名な、<a href="http://www.city.hagi.lg.jp/portal/bunrui/detail.html?lif_id=28050" target="_blank" class="info_link02">萩クロマグロトーナメント</a>の開催されている漁場で漁をしております。その漁場で獲れた新鮮な魚介類（当店では太平洋に負けない日本海マグロも扱っています）をふんだんに使い、洗練されたシェフが萩の味を創ります。</p>
+    <!--cont01--></div>
+    
+    <div id="cont03">
+      <p id="text05">窓からは昼夜で景色の違う明神池を眺望できます。明神池は国の天然記念物に指定されており、池ではありますが、鯛やエイ、スズキやフグ、ボラ等の海の魚達が泳いでいる神秘的な池です。近くには宮島の厳島神社を勧請した、<a href="http://www.itukushimajinjya.com/" target="_blank" class="info_link02">越ヶ浜厳島神社</a>があり、参拝もできます。窓からの景色と自慢の料理を、是非一度お楽しみください。</p>
+    <!--cont03--></div>
+    
+    <div id="cont04">
+      <img src="img_about/cont04_img.gif" alt="夜、外観" height="159" width="280"/>
+           
+        <p id="text06">萩池々茶屋は夜も営業しています。ディナータイムにご来店頂く為にはご予約が必要となりますが、コースだけでなく、アラカルト（単品）でもお席をご予約頂く事ができ、居酒屋のようにお楽しみ頂く事が可能です。アラカルトのみをご希望される方は、当日のご予約でも受け付けております。魚介類が苦手な方はお肉のご用意もしておりますし、お子様には低価格でお料理をご提供致します。和食創作漁師料理、地中海イタリア漁師料理のコース、様々なアラカルト・ドリンクメニューをご用意しておりますので、<a href="menu.html" target="_blank" class="info_link02">メニューページ</a>をご覧の上、お気軽にご予約ください。お車でご来店されるお客様にはノンアルコールビールのKirin Freeをご用意しています。また、お酒を飲まれるお客様には代行のタクシーにご連絡も致しますので、お申し付けください。        </p>
+      
+    <!--cont04--></div>
+    
+    <div id="cont02">
+      <div id="cook"><img src="img/cook.jpg" border="none" height="263" width="201" alt="シェフ椙本"/></div>
+      <div id="cook_text"><p id="text02">料理人</p><p id="text03">椙本 記通</p>
+      <p id="text04">萩生まれ。<br/>
+        東京にて有名レストランANA羽田空港店に４年間勤務、その後、東京ドームホテルOPENに携わり、３年間勤務。調理師免許だけでなく、ふぐ調理師免許も下関にて取得し、当店立ち上げのため故郷の萩に戻る。<br/>
+        和食・洋食ともに調理し、ひとつひとつ丁寧に仕上げ、また、更なる味を追求し日々研究にも励む。</p></div>
+    <!--cont02-->
+      </div>
+  </div>
+
+    
+<div id="footer">
+      
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+           <li><a href="about.html">お店について</a></li>
+           <li><a href="menu.html">メニュー</a></li>
+           <li><a href="accsess.html">ご予約・アクセス</a></li>
+           <li><a href="http://www.chuosuisan.com/">会社概要</a></li>
+        </ul>
+              <div id="omake"><a href="http://www.google.co.jp/images?um=1&amp;hl=ja&amp;safe=off&amp;rlz=1G1GGLQ_JAJP264&amp;biw=1868&amp;bih=1017&amp;tbs=isch%3A1&amp;sa=1&amp;q=%E6%A2%85%E8%B2%9D&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image29','','img/baigai02_over.gif',1)" target="_blank"><img src="img/baigai02.gif" alt="梅貝" name="Image29" width="40" height="40" border="0" id="Image29" /></a></div>
+    
+    <p>Copyright © 2011 daigoryoeimaru Co.,Ltd. All rights reserved</p>
+    <p><a href="http://www.youtube.com/user/HagiCrazyDog" target="_blank" class="youtube">萩池々茶屋</a></p>
+<!--footer--></div>
+
+<div class="tooltip">
+  <img src="img/tip01.jpg" alt="梅貝について" height="815" width="450" class="tooltip01"  />
+  <img src="img/tooltipFoot.gif" alt=""  class="tooltipFoot"/>
+</div>
+
+
+  
+</body>
+</html>

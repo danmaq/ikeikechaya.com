@@ -1,0 +1,329 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+body {
+  background-color: #fdfdfb;
+  background-image: url(../img/header_back.jpg);
+  background-repeat: repeat-x;
+  text-align: center;
+}
+#header {
+  padding: 0px;
+  width: 710px;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+}
+#main_logo {
+  padding: 0px;
+  margin-top: 23px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  width: 233px;
+  float: left;
+}
+#kai {
+  float: left;
+  height: 40px;
+  width: 40px;
+  margin-top: 35px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+}
+#to_coupon {
+  float: right;
+  margin-top: 25px;
+  margin-right: 153px;
+  vertical-align: baseline;
+}
+#menu {
+  float: right;
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+.menu_list {
+  float: right;
+  margin-left: 10px;
+  list-style: none;
+}
+#main {
+  text-align: center;
+  padding: 0px;
+  height: auto;
+  width: 725px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+}
+#slideshow {
+  background-image: url(../img/slideshow_base.gif);
+  text-align: center;
+  padding: 0px;
+  height: 291px;
+  width: 725px;
+  position: relative;
+  margin: auto;
+  background-repeat: no-repeat;
+}
+#slideshow img {
+  position: absolute;
+  z-index: 8;
+  margin-top: 0px;
+  margin-left: 0px;
+  left: 21px;
+  top: 19px;
+}
+#slideshow .active {
+  z-index: 10;
+}
+#slideshow .last-active {
+  z-index: 9;
+}
+#main #news {
+  margin-top: 25px;
+  height: 150px;
+  width: 679px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 70px;
+}
+#news_info {
+  text-align: left;
+  margin-top: 10px;
+  overflow: auto;
+  height: 137px;
+  line-height: 120%;
+}
+.date {
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #0000ff;
+}
+.info_link {
+  font-size: 11px;
+  color: #eb1355;
+  text-decoration: none;
+  font-family: "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", Osaka;
+}
+.info {
+  font-size: 11px;
+  color: #333333;
+  font-family: "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", Osaka;
+}
+#cont01 {
+  background-image: url(../img/main_back.jpg);
+  background-repeat: no-repeat;
+  margin-left: 22px;
+  text-align: left;
+  padding-bottom: 20px;
+  height: 295px;
+}
+#text01 {
+  width: 435px;
+  padding-top: 50px;
+  font-family: "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", Osaka;
+  font-size: 12px;
+  line-height: 25px;
+  color: #333333;
+}
+.info_link02 {
+  font-size: 12px;
+  color: #eb1355;
+  text-decoration: none;
+  font-family: "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", Osaka;
+}
+#cont02 {
+  height: 334px;
+  width: 680px;
+  margin-top: 25px;
+  background-color: #f7f5f0;
+  margin-right: auto;
+  margin-left: auto;
+  vertical-align: middle;
+}
+#cont02 #cook {
+  padding-top: 35.5px;
+  height: 263px;
+  width: 201px;
+  margin-left: 70px;
+  float: left;
+}
+#cook_text {
+  text-align: left;
+  float: right;
+  width: 360px;
+  padding-top: 43px;
+}
+
+#cont03 {
+  width: 680px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+}
+.cont03_link {
+  float: left;
+  width: 340px;
+  margin: 0px;
+  height: 90px;
+  text-decoration: none;
+}
+#cont05 {
+  height: 300px;
+  width: 680px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.link_img {
+  float: left;
+  margin-top: 5px;
+  display: block;
+}
+.link_text {
+  width: 244px;
+  float: right;
+  height: 90px;
+  display: block;
+}
+.link_text01 {
+  font-family: "小塚明朝 Pro", "ヒラギノ明朝 Pro W3", "ＭＳ Ｐ明朝", "細明朝体";
+  font-size: 14pt;
+  font-weight: normal;
+  color: #000082 !important;
+  display: block;
+  padding-top: 5px;
+  margin-top: 2px;
+}
+.link_text02 {
+  font-family: "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", Osaka;
+  font-size: 13px;
+  color: #333333;
+  line-height: 15pt;
+  letter-spacing: -1px;
+  font-weight: normal;
+  display: block;
+}
+.link_img {
+  padding-left: 5px;
+}
+a:hover.cont03_link {
+  background-color: #f7f5f0;
+}
+.clear {
+  clear: both;
+}
+#footer {
+  width: 680px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  border-top: 1px solid #d9d9d9;
+  line-height: 1;
+  overflow: hidden;
+  position: relative;
+  padding-top: 20px;
+  padding-right: 0;
+  padding-bottom: 40px;
+  padding-left: 0;
+  text-align: left;
+  height: 50px;
+}
+#footer a {
+  text-decoration: none;
+  color: #333333;
+}
+#footer ul {
+  font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+  font-size: 12px;
+  color: #333333;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+#footer li {
+  border-left: 1px solid #d9d9d9;
+  float: left;
+  padding: 0 15px;
+  list-style-type: none;
+  position: relative;
+  left: -16px;
+}
+#footer p {
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #333333;
+  margin-top: 10px;
+  width: 500px;
+  display: block;
+  clear: left;
+}
+#footer #omake {
+  float: right;
+  height: 40px;
+  width: 40px;
+  margin-right: 5px;
+}
+.youtube {
+  color: #fdfdfb !important;
+}
+div.tooltip {
+  width: 500px;
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+}
+div.tooltip .tooltipFoot {
+  vertical-align: top;
+}
+.tooltip01 {
+  padding-top: 15px;
+  background-image: url(../img/tooltipBody.gif);
+}
+div.tooltip02 {
+  width: 300px;
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+}
+.tooltip02 div {
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 5px;
+}
+.tooltip02 p {
+  font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+  font-size: 14px;
+  color: #ffffff;
+  background-image: url(../img/tooltipBody02.gif);
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  line-height: 1.5em;
+  font-weight: normal;
+}
+#main #Course {
+  margin-right: auto;
+  margin-left: auto;
+  height: 250px;
+  width: 680px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
