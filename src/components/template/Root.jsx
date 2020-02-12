@@ -65,7 +65,7 @@ const Root = ({ Body, children, Head, state }) => (
       {children}
       <script
         crossOrigin="anonymous"
-        src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.includes%2CPromise"
+        src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.includes%2CPromise%2CString.prototype.includes"
       />
     </Body>
   </html>
