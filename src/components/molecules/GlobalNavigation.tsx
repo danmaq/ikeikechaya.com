@@ -1,12 +1,13 @@
+import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import ButtonGroup, { ButtonGroupTypeMap } from '@material-ui/core/ButtonGroup';
-import Container from '@material-ui/core/Container';
 import { makeStyles, Theme } from '@material-ui/core/styles';
 import OpenInNewRounded from '@material-ui/icons/OpenInNewRounded';
 import { Link as RouterLink } from '@reach/router';
 import classNames from 'classnames';
 import React from 'react';
 import getLinkAttributes from '~/utils/getLinkAttributes';
+import { NavigationType } from '~/utils/globalNavigationSource';
 
 // TODO: HERE CODES ARE NOT ELEGANT, SO REFACTOR ME :/
 
@@ -20,10 +21,11 @@ export interface DOMProps {
 export interface Props {
   className?: Parameters<typeof classNames>[number];
   footer?: boolean;
+  source?: readonly NavigationType[];
 }
 
 export const DOM: React.FC<DOMProps> = ({ children, className, group }) => (
-  <Container className={className} component="nav" disableGutters>
+  <Box className={className} component="nav">
     {group ? (
       <ButtonGroup variant="text" aria-label="text primary button group">
         {children}
@@ -31,28 +33,15 @@ export const DOM: React.FC<DOMProps> = ({ children, className, group }) => (
     ) : (
       children
     )}
-  </Container>
+  </Box>
 );
 DOM.displayName = 'GlobalNavigation';
 
-const headerSource: [string, string][] = [
-  ['/', 'ホーム'],
-  ['/about', 'お店について'],
-  ['/menu', 'メニュー'],
-  ['/access', 'ご予約・アクセス']
-];
-const footerSource: [string, string][] = [
-  ['http://www.chuosuisan.com/', '会社概要']
-];
-
-const getMapSource = (containedCompany?: boolean): [string, string][] =>
-  containedCompany ? [...headerSource, ...footerSource] : headerSource;
-
 const useButtonStyles = makeStyles({
-  externalIcon: { fontSize: '90%' },
+  externalIcon: { fontSize: '80%' },
   root: (footer: boolean) => ({
     fontSize: '100%',
-    padding: footer ? '0 1.2rem' : '0.1rem 0.3rem'
+    padding: footer ? '0 1.2rem' : '0.2rem 0.3rem'
   })
 });
 
@@ -62,10 +51,13 @@ const useButtonStyles = makeStyles({
  * causes Material-UI to malfunction.
  * @param variant
  */
-const renderButtons = (footer?: boolean): React.ReactNodeArray => {
+const renderButtons = ({
+  footer,
+  source
+}: Pick<Props, 'footer' | 'source'>): React.ReactNodeArray | undefined => {
   const { externalIcon, root } = useButtonStyles(!!footer);
   const variant: Variant = footer ? 'text' : 'contained';
-  return getMapSource(footer).map(([href, children]) => {
+  return source?.map(([href, children]) => {
     const { absolute, rel, target } = getLinkAttributes(href);
     return (
       <Button
@@ -93,11 +85,11 @@ const useStyles = makeStyles((theme: Theme) => ({
   root: { '& > *': { margin: theme.spacing(0.5) } }
 }));
 
-const GlobalNavigation: React.FC<Props> = ({ className, footer }) => {
+const GlobalNavigation: React.FC<Props> = ({ className, footer, source }) => {
   const { root } = useStyles();
   return (
     <DOM className={classNames(root, className)} group={footer}>
-      {renderButtons(footer)}
+      {renderButtons({ footer, source })}
     </DOM>
   );
 };

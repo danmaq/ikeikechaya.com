@@ -6,7 +6,7 @@ import React from 'react';
 
 export interface DOMProps {
   boxesClassName?: string;
-  boxStyles?: React.PropsWithChildren<React.CSSProperties>[];
+  boxStyles?: readonly React.PropsWithChildren<React.CSSProperties>[];
   className?: string;
 }
 
@@ -21,7 +21,7 @@ export interface BoxItemType {
 }
 
 export interface Props extends StylesProps {
-  boxes?: React.PropsWithChildren<BoxItemType>[];
+  boxes?: readonly React.PropsWithChildren<BoxItemType>[];
   className?: Parameters<typeof classNames>[number];
 }
 
