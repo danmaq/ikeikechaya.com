@@ -39,7 +39,7 @@ export const DOM: React.FC<DOMProps> = ({
                 <img
                   alt="萩池々茶屋"
                   className={logoClassName}
-                  src="images/header/logo.png"
+                  src="/images/header/logo.png"
                   width={233}
                   height={52}
                 />
@@ -79,7 +79,7 @@ const useHeaderStyles = makeStyles(() => ({
   heading: { margin: 0 },
   logo: { width: '100%', height: 'auto' },
   root: {
-    backgroundImage: 'url("images/header/bg.jpg")',
+    backgroundImage: 'url("/images/header/bg.jpg")',
     backgroundSize: 'contain',
     fontSize: '110%',
     padding: '1.2rem 0 1.2rem'

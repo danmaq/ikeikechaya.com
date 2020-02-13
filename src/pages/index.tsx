@@ -48,11 +48,11 @@ const Page: React.FC = () => (
         { height: '16%', width: '43%' },
         { height: '17%', width: '36%' }
       ]}
-      image="images/home/copy_back.jpg"
+      image="/images/home/copy_back.jpg"
     >
       <Article>
         地元漁師から直接買い付けた物や、萩港に水揚げされたばかりの新鮮な魚介類を使用し、洗練された料理人が、和食・洋食・各種会席をご用意しています。ランチタイム、ディナータイム、日替わりのデザートをご用意したカフェタイムで、それぞれの違いもお楽しみ頂けます。是非一度、新鮮な魚介類とシェフの料理を味わって頂ければ幸いです。お気軽にご予約・お問い合わせください。ご予約は
-        <TextLink href="/access">こちら</TextLink>
+        <TextLink href="/access/">こちら</TextLink>
         から。
         <wbr />
         また、当店を経営しております
