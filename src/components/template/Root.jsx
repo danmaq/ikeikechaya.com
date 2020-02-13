@@ -57,10 +57,6 @@ const DOM = ({
       <Head prefix="og: http://ogp.me/ns# website: http://ogp.me/ns/website#">
         <meta charSet="UTF-8" />
         <meta httpEquiv="cleartype" content="on" />
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="default-src 'self'"
-        />
         <meta httpEquiv="x-ua-compatible" content="ie=Edge" />
         <title>{title}</title>
         {desc && (
