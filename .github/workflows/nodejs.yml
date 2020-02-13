@@ -44,7 +44,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          script: rm -rf web/vhosts/ikeikechaya.com.*
+          script: rm -rf web/vhosts/ikeikechaya.com.old
       - name: backup
         uses: appleboy/ssh-action@master
         with:
@@ -61,3 +61,11 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: mv web/vhosts/ikeikechaya.com.staging/dist web/vhosts/ikeikechaya.com
+      - name: teardown
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: rm -rf web/vhosts/ikeikechaya.com.staging
