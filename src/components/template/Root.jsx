@@ -88,7 +88,6 @@ const DOM = ({
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
         <meta name="msapplication-starturl" content="/" />
-        <meta name="referrer" content="origin-when-crossorigin" />
         <meta name="renderer" content="webkit" />
         {norobot && (
           <meta
