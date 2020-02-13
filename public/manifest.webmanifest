@@ -1,0 +1,25 @@
+{
+  "background_color": "#FDFDFB",
+  "description": "萩池々茶屋は、萩越ヶ浜の漁師 第五良栄丸が経営するレストランです。魚介類を産地から都心部に直送する前に、漁船より直接水揚げするため、鮮度の良い海産物が召し上がれます。萩池々茶屋は、明神池が眺望できるお店です。萩の地域活性化に貢献することを企業理念としております。",
+  "icons": [
+    {
+      "src": "images/header/conch_128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "images/header/conch.png",
+      "sizes": "60x60",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16"
+    }
+  ],
+  "lang": "ja-JP",
+  "name": "萩池々茶屋 produced by 第五良栄丸",
+  "short_name": "萩池々茶屋",
+  "start_url": ".",
+  "theme_color": "#0C0C88"
+}
