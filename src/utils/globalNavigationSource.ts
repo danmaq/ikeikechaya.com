@@ -2,9 +2,9 @@ export type NavigationType = [string, string];
 
 const commonData: readonly NavigationType[] = [
   ['/', 'ホーム'],
-  ['/about', 'お店について'],
-  ['/menu', 'メニュー'],
-  ['/access', 'ご予約・アクセス']
+  ['/about/', 'お店について'],
+  ['/menu/', 'メニュー'],
+  ['/access/', 'ご予約・アクセス']
 ];
 
 export const headerData: readonly NavigationType[] = [...commonData];

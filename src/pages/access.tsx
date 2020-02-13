@@ -21,7 +21,7 @@ const Page: React.FC = () => {
   );
   return (
     <>
-      <ArticleWithImage image="images/access/cont01.png">
+      <ArticleWithImage image="/images/access/cont01.png">
         <Article>
           萩池々茶屋の
           <strong>夜のお食事は、ご予約の必要</strong>
@@ -47,7 +47,7 @@ const Page: React.FC = () => {
           当店ではランチのご予約も受付ておりますが、当店は観光地に立地するため、観光シーズン中はランチ予約はできない場合がございます。予め、ご容赦くださいます様宜しくお願いいたします。
         </Article>
       </ArticleWithHeading>
-      <ArticleWithImage image="images/access/cont02.png">
+      <ArticleWithImage image="/images/access/cont02.png">
         <Article>
           <Link href="tel:0838-21-7111">
             0838-21-7111 (スマフォでクリック)
