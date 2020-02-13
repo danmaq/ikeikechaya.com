@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-
-// Your top level component
+import * as Sentry from '@sentry/browser';
 import App from './App';
 
 // Export your top level component as JSX (for static rendering)
@@ -24,6 +23,10 @@ if (typeof document !== 'undefined') {
     );
   };
 
+  Sentry.init({
+    dsn: 'https://50b5b88a078a4c33853096b39a458177@sentry.io/2476275',
+    enabled: true
+  });
   // Render!
   render(App);
 
