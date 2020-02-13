@@ -75,7 +75,7 @@ const Conch: React.FC<Props> = ({ action, className, dark }) => {
       }, [action])}
       onHover={React.useCallback(() => setHovered(true), [])}
       onLeave={React.useCallback(() => setHovered(false), [])}
-      src={`images/header/conch${dark ? '_dark' : ''}.png`}
+      src={`/images/header/conch${dark ? '_dark' : ''}.png`}
     />
   );
 };
