@@ -1,7 +1,7 @@
+import * as Sentry from '@sentry/browser';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import * as Sentry from '@sentry/browser';
 import App from './App';
 
 // Export your top level component as JSX (for static rendering)

@@ -50,8 +50,8 @@ const DOM = ({
   return (
     <Html
       lang={lang}
-      itemscope
-      itemtype="https://schema.org/Article"
+      itemScope
+      itemType="https://schema.org/Article"
       xmlns="http://www.w3.org/1999/xhtml"
     >
       <Head prefix="og: http://ogp.me/ns# website: http://ogp.me/ns/website#">
@@ -136,13 +136,7 @@ const DOM = ({
         <link rel="canonical" href={url} />
         <link rel="first" href="/" />
       </Head>
-      <Body>
-        {children}
-        <script
-          crossOrigin="anonymous"
-          src="https://polyfill.io/v3/polyfill.min.js"
-        />
-      </Body>
+      <Body>{children}</Body>
     </Html>
   );
 };
@@ -155,7 +149,7 @@ DOM.defaultProps = {
 };
 DOM.displayName = 'RootDOM';
 
-/** @typedef {Pick<DocumentProps['state'], 'siteData'> & RouteFlags & { config: ReactStaticConfig, route: Route }} State */
+/** @typedef {Pick<DocumentProps['state'], 'siteData'> & RouteFlags & { config: ReactStaticConfig, route?: Route }} State */
 
 /** @typedef {Omit<DocumentProps, 'state'> & { state: State }} Props */
 
@@ -174,7 +168,7 @@ const Root = ({ Body, children, Head, Html, state }) => (
     locale="ja_JP"
     longitude={131.409517}
     norobot={state.stage === 'prod' && !state.staging}
-    path={state.route.path}
+    path={state.route && state.route.path}
     title="萩池々茶屋"
   >
     {children}
