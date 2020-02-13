@@ -1,0 +1,37 @@
+ErrorDocument 404 /404.html
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Images
+  ExpiresByType image/jpeg "access plus 2 day"
+  ExpiresByType image/gif "access plus 2 day"
+  ExpiresByType image/png "access plus 2 day"
+  ExpiresByType image/webp "access plus 2 day"
+  ExpiresByType image/svg+xml "access plus 2 day"
+  ExpiresByType image/x-icon "access plus 2 day"
+
+  # Video
+  ExpiresByType video/mp4 "access plus 2 day"
+  ExpiresByType video/mpeg "access plus 2 day"
+
+  # CSS, JavaScript
+  ExpiresByType text/css "access plus 1 day"
+  ExpiresByType text/javascript "access plus 1 day"
+  ExpiresByType application/javascript "access plus 1 day"
+
+  # Others
+  ExpiresByType application/pdf "access plus 2 day"
+  ExpiresByType application/x-shockwave-flash "access plus 1 year"
+</IfModule>
+
+<IfModule mod_setenvif.c>
+  <IfModule mod_headers.c>
+    BrowserMatch MSIE ie
+    Header set X-UA-Compatible "IE=Edge" env=ie
+  </IfModule>
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header append Vary User-Agent
+</IfModule>
