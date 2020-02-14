@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
     />
   );
   const copyright = (
-    <Typography className={copy}>
+    <Typography className={copy} role="contentinfo">
       Copyright © 2011 daigoryoeimaru Co.,Ltd. All rights reserved.
       <wbr />
       Original designed by Mattsun.
