@@ -3,13 +3,12 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
 import Conch from '~/components/atoms/Conch';
+import Copyright from '~/components/atoms/Copyright';
 import GlobalNavigation from '~/components/molecules/GlobalNavigation';
 import { footerData } from '~/utils/globalNavigationSource';
 
 const useStyles = makeStyles({
-  copy: { fontSize: '100%' },
   divider: { border: '1px solid rgb(217, 217, 217)', margin: 0 },
   innerContainer: { paddingTop: '1rem' }
 });
@@ -22,13 +21,6 @@ export const Footer: React.FC = () => {
       dark
     />
   );
-  const copyright = (
-    <Typography className={copy} role="contentinfo">
-      Copyright © 2011 daigoryoeimaru Co.,Ltd. All rights reserved.
-      <wbr />
-      Original designed by Mattsun.
-    </Typography>
-  );
   const nav = <GlobalNavigation footer source={footerData} />;
   return (
     <Container component="footer" maxWidth="md">
@@ -37,7 +29,7 @@ export const Footer: React.FC = () => {
         <Grid className={innerContainer} container>
           <Grid item xs={11}>
             {nav}
-            {copyright}
+            <Copyright />
           </Grid>
           <Grid item xs={1}>
             {conch}
@@ -48,7 +40,7 @@ export const Footer: React.FC = () => {
         {nav}
         <Grid className={innerContainer} container>
           <Grid item xs={10}>
-            {copyright}
+            <Copyright />
           </Grid>
           <Grid item xs={2}>
             {conch}
