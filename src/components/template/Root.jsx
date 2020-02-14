@@ -48,7 +48,12 @@ const DOM = ({
   const url = `${baseUrl}/${path}`;
   const image = `${baseUrl}/images/home/slideshow00.jpg`;
   return (
-    <Html lang={lang} itemScope itemType="https://schema.org/Article">
+    <Html
+      lang={lang}
+      itemScope
+      itemType="https://schema.org/Article"
+      style={{ backgroundColor: '#0C0C88' }}
+    >
       <Head prefix="og: http://ogp.me/ns# website: http://ogp.me/ns/website#">
         <meta httpEquiv="cleartype" content="on" />
         <meta httpEquiv="x-ua-compatible" content="ie=Edge" />
@@ -130,7 +135,7 @@ const DOM = ({
         <link rel="canonical" href={url} />
         <link rel="first" href="/" />
       </Head>
-      <Body>{children}</Body>
+      <Body style={{ backgroundColor: '#FDFDFB' }}>{children}</Body>
     </Html>
   );
 };
