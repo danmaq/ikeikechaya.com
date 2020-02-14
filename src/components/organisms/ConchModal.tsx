@@ -84,7 +84,7 @@ DOM.displayName = 'ConchModalDOM';
 const useStyles = makeStyles({
   container: { textAlign: 'center', paddingBottom: '3rem' },
   image: { width: '100%', height: 'auto' },
-  root: { '& > .MuiDrawer-paper': { backgroundColor: 'rgb(246, 245, 250)' } }
+  root: { '& > .MuiDrawer-paper': { backgroundColor: 'rgb(245, 246, 241)' } }
 });
 
 const ConchModal: React.FC<Props> = ({ onClose, open }) => {
