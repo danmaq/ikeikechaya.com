@@ -20,7 +20,11 @@ const App: React.FC = () => (
       <div className="content">
         <React.Suspense fallback={<Loading />}>
           <Header />
-          <Container className={useStyles().innerContainer} maxWidth="md">
+          <Container
+            className={useStyles().innerContainer}
+            maxWidth="md"
+            role="main"
+          >
             <Router>
               <Routes path="*" />
             </Router>

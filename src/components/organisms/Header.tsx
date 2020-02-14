@@ -39,6 +39,7 @@ export const DOM: React.FC<DOMProps> = ({
                 <img
                   alt="萩池々茶屋"
                   className={logoClassName}
+                  role="banner"
                   src="/images/header/logo.png"
                   width={233}
                   height={52}

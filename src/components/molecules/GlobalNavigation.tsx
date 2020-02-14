@@ -24,7 +24,7 @@ export interface Props {
 }
 
 export const DOM: React.FC<DOMProps> = ({ children, className, group }) => (
-  <Box className={className} component="nav">
+  <Box className={className} component="nav" role="navigation">
     {group ? (
       <ButtonGroup variant="text" aria-label="text primary button group">
         {children}
