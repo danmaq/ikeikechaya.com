@@ -53,18 +53,18 @@ export const DOM: React.FC<DOMProps> = ({
           <img
             alt="萩の梅貝"
             className={imageClassName}
-            src="/images/modal/conch1.png"
+            src="/images/modal/poster.jpg"
             width={400}
-            height={280}
+            height={281}
           />
         </Grid>
         <Grid item md={6}>
           <img
             alt="萩の梅貝"
             className={imageClassName}
-            src="/images/modal/conch2.png"
+            src="/images/modal/hukuro.jpg"
             width={400}
-            height={265}
+            height={264}
           />
         </Grid>
       </Grid>
@@ -84,7 +84,7 @@ DOM.displayName = 'ConchModalDOM';
 const useStyles = makeStyles({
   container: { textAlign: 'center', paddingBottom: '3rem' },
   image: { width: '100%', height: 'auto' },
-  root: { '& > .MuiDrawer-paper': { backgroundColor: 'rgb(246, 245, 250)' } }
+  root: { '& > .MuiDrawer-paper': { backgroundColor: 'rgb(245, 246, 241)' } }
 });
 
 const ConchModal: React.FC<Props> = ({ onClose, open }) => {

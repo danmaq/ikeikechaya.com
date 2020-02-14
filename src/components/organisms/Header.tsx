@@ -11,6 +11,7 @@ import ConchModal from './ConchModal';
 
 export interface DOMProps {
   className?: string;
+  containerClassName?: string;
   couponClassName?: string;
   gridItemClassName?: string;
   headingClassName?: string;
@@ -22,6 +23,7 @@ export interface DOMProps {
 
 export const DOM: React.FC<DOMProps> = ({
   className,
+  containerClassName,
   gridItemClassName,
   headingClassName,
   logoClassName,
@@ -31,7 +33,7 @@ export const DOM: React.FC<DOMProps> = ({
 }) => (
   <>
     <AppBar component="header" className={className} position="static">
-      <Container maxWidth="md">
+      <Container className={containerClassName} maxWidth="md">
         <Grid alignContent="center" container justify="center">
           <Grid className={gridItemClassName} item sm={3} xs={10}>
             <h1 className={headingClassName}>
@@ -75,6 +77,10 @@ export const DOM: React.FC<DOMProps> = ({
 DOM.displayName = 'HeaderDOM';
 
 const useHeaderStyles = makeStyles(() => ({
+  container: {
+    paddingLeft: 'env(safe-area-inset-left)',
+    paddingRight: 'env(safe-area-inset-right)'
+  },
   coupon: { color: 'white', fontWeight: 700 },
   gridItem: { margin: 'auto' },
   heading: { margin: 0 },
@@ -88,11 +94,19 @@ const useHeaderStyles = makeStyles(() => ({
 }));
 
 export const Header: React.FC = () => {
-  const { coupon, gridItem, heading, logo, root } = useHeaderStyles();
+  const {
+    container,
+    coupon,
+    gridItem,
+    heading,
+    logo,
+    root
+  } = useHeaderStyles();
   const [openModal, setOpenModal] = React.useState(false);
   return (
     <DOM
       className={root}
+      containerClassName={container}
       couponClassName={coupon}
       gridItemClassName={gridItem}
       headingClassName={heading}
