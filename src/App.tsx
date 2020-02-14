@@ -10,7 +10,11 @@ import Header from './components/organisms/Header';
 import theme from './theme';
 
 const useStyles = makeStyles({
-  innerContainer: { paddingTop: '2rem' }
+  innerContainer: {
+    paddingLeft: 'env(safe-area-inset-left)',
+    paddingRight: 'env(safe-area-inset-right)',
+    paddingTop: '2rem'
+  }
 });
 
 const App: React.FC = () => (

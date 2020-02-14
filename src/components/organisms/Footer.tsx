@@ -10,11 +10,12 @@ import { footerData } from '~/utils/globalNavigationSource';
 
 const useStyles = makeStyles({
   divider: { border: '1px solid rgb(217, 217, 217)', margin: 0 },
-  innerContainer: { paddingTop: '1rem' }
+  innerContainer: { paddingTop: '1rem' },
+  root: { paddingBottom: 'env(safe-area-inset-bottom)' }
 });
 
 export const Footer: React.FC = () => {
-  const { copy, divider, innerContainer } = useStyles();
+  const { divider, innerContainer, root } = useStyles();
   const conch = (
     <Conch
       action="https://www.google.co.jp/search?tbm=isch&amp;q=%E6%A2%85%E8%B2%9D"
@@ -23,7 +24,7 @@ export const Footer: React.FC = () => {
   );
   const nav = <GlobalNavigation footer source={footerData} />;
   return (
-    <Container component="footer" maxWidth="md">
+    <Container className={root} component="footer" maxWidth="md">
       <hr className={divider} />
       <Hidden only="xs">
         <Grid className={innerContainer} container>
