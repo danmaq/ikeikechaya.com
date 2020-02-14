@@ -1,5 +1,7 @@
 /* eslint no-param-reassign: off */
+/* eslint react/jsx-filename-extension: warn */
 import { ServerStyleSheets } from '@material-ui/core/styles';
+import React from 'react';
 
 /** @typedef {import('react-static').RouteFlags} RouteFlags */
 /** @typedef {import('webpack').Configuration} Configuration */
@@ -13,6 +15,7 @@ export default () => ({
 
   /** @type {(elements: React.ComponentType[], context: { meta: { muiSheets?: ServerStyleSheets } }) => React.ComponentType[]} */
   headElements: (elements, { meta }) => [
+    <meta charSet="UTF-8" />,
     ...elements,
     meta.muiSheets && meta.muiSheets.getStyleElement()
   ],

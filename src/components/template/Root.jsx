@@ -48,14 +48,8 @@ const DOM = ({
   const url = `${baseUrl}/${path}`;
   const image = `${baseUrl}/images/home/slideshow00.jpg`;
   return (
-    <Html
-      lang={lang}
-      itemScope
-      itemType="https://schema.org/Article"
-      xmlns="http://www.w3.org/1999/xhtml"
-    >
+    <Html lang={lang} itemScope itemType="https://schema.org/Article">
       <Head prefix="og: http://ogp.me/ns# website: http://ogp.me/ns/website#">
-        <meta charSet="UTF-8" />
         <meta httpEquiv="cleartype" content="on" />
         <meta httpEquiv="x-ua-compatible" content="ie=Edge" />
         <title>{title}</title>
