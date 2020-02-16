@@ -124,7 +124,7 @@ const DOM = ({
         <meta property="og:url" content={url} />
         <meta property="op:markup_version" content="v1.0" />
         <link rel="apple-touch-icon" sizes="128x128" href={icon} />
-        <link rel="author" href="/humans.txt" />
+        <link rel="author" href="https://twitter.com/danmaq" />
         <link rel="icon" sizes="128x128" href={icon} />
         <link rel="manifest" href="/manifest.webmanifest" />
         <link
@@ -166,7 +166,7 @@ const Root = ({ Body, children, Head, Html, state }) => (
     latitude={34.448272}
     locale="ja_JP"
     longitude={131.409517}
-    norobot={state.stage === 'prod' && !state.staging}
+    norobot={state.stage !== 'prod' || state.staging}
     path={state.route && state.route.path}
     title="萩池々茶屋"
   >
