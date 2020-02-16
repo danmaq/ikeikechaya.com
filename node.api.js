@@ -23,12 +23,8 @@ export default () => ({
   ],
 
   /** @type {(config: Configuration, options: RouteFlags) => Configuration} */
-  webpack: ({ devServer, entry, ...config } = {}) => ({
+  webpack: ({ devServer, ...config } = {}) => ({
     ...config,
-    devServer: { ...devServer, disableHostCheck: true },
-    devtool: 'source-map',
-    entry: Array.isArray(entry)
-      ? ['@babel/polyfill', ...entry]
-      : ['@babel/polyfill', entry]
+    devServer: { ...devServer, disableHostCheck: true }
   })
 });
