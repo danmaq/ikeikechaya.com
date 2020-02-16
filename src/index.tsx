@@ -11,7 +11,6 @@ export default App;
 if (typeof document !== 'undefined') {
   const { host } = window.location;
   const enabledSentry = !/(localhost|127\.0\.0\.1)/.test(host);
-  console.debug('Sentry', enabledSentry ? 'enable' : 'disable');
   Sentry.init({
     dsn: 'https://50b5b88a078a4c33853096b39a458177@sentry.io/2476275',
     enabled: enabledSentry
