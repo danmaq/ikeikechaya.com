@@ -2,9 +2,9 @@ import AppBar from '@material-ui/core/AppBar';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import { Link as RouterLink } from '@reach/router';
 import React from 'react';
 import Conch from '~/components/atoms/Conch';
+import TextLink from '~/components/atoms/TextLink';
 import GlobalNavigation from '~/components/molecules/GlobalNavigation';
 import { headerData, headerData2 } from '~/utils/globalNavigationSource';
 import ConchModal from './ConchModal';
@@ -39,7 +39,7 @@ export const DOM: React.FC<DOMProps> = ({
         <Grid alignContent="center" container justify="center">
           <Grid className={gridItemClassName} item sm={3} xs={10}>
             <h1 className={headingClassName}>
-              <RouterLink to="/">
+              <TextLink href="/">
                 <img
                   alt="萩池々茶屋"
                   className={logoClassName}
@@ -48,7 +48,7 @@ export const DOM: React.FC<DOMProps> = ({
                   width={233}
                   height={52}
                 />
-              </RouterLink>
+              </TextLink>
             </h1>
           </Grid>
           <Grid className={gridItemClassName} item sm={1} xs={2}>

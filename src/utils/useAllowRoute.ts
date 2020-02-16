@@ -4,7 +4,7 @@ const shouldDisableRoute = () =>
   typeof window !== 'undefined' &&
   window.document?.createElement &&
   // MSIE should disable navigating with SPA because it has a problem.
-  /MSIE /.test(window.navigator.userAgent);
+  /Trident\//.test(window.navigator.userAgent);
 
 export default () => {
   const [route, setRoute] = React.useState(true);
