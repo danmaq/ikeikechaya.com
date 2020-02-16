@@ -1,12 +1,3 @@
 {
-  "presets": [
-    "react-static/babel-preset.js",
-    [
-      "@babel/preset-env",
-      {
-        "useBuiltIns": "usage",
-        "corejs": 3
-      }
-    ]
-  ]
+  "presets": ["react-static/babel-preset.js"]
 }
