@@ -57,22 +57,25 @@ const useStyles = makeStyles({
   }
 });
 
+const useOnClick = (action: Props['action']) =>
+  React.useCallback(() => {
+    if (typeof action === 'string') {
+      const newWindow = window.open();
+      if (newWindow) {
+        newWindow.location.href = action;
+      }
+    } else if (action) {
+      action();
+    }
+  }, [action]);
+
 const Conch: React.FC<Props> = ({ action, className, dark }) => {
   const { image, rotate } = useStyles();
   const [hovered, setHovered] = React.useState(false);
   return (
     <DOM
       className={classNames(image, { [rotate]: hovered }, className)}
-      onClick={React.useCallback(() => {
-        if (typeof action === 'string') {
-          const newWindow = window.open();
-          if (newWindow) {
-            newWindow.location.href = action;
-          }
-        } else if (action) {
-          action();
-        }
-      }, [action])}
+      onClick={useOnClick(action)}
       onHover={React.useCallback(() => setHovered(true), [])}
       onLeave={React.useCallback(() => setHovered(false), [])}
       src={`/images/header/conch${dark ? '_dark' : ''}.png`}

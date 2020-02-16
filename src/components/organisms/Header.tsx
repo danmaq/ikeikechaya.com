@@ -21,6 +21,8 @@ export interface DOMProps {
   openModal?: boolean;
 }
 
+export type Props = Pick<DOMProps, 'containerClassName'>;
+
 export const DOM: React.FC<DOMProps> = ({
   className,
   containerClassName,
@@ -77,10 +79,6 @@ export const DOM: React.FC<DOMProps> = ({
 DOM.displayName = 'HeaderDOM';
 
 const useHeaderStyles = makeStyles(() => ({
-  container: {
-    paddingLeft: 'env(safe-area-inset-left)',
-    paddingRight: 'env(safe-area-inset-right)'
-  },
   coupon: { color: 'white', fontWeight: 700 },
   gridItem: { margin: 'auto' },
   heading: { margin: 0 },
@@ -93,20 +91,13 @@ const useHeaderStyles = makeStyles(() => ({
   }
 }));
 
-export const Header: React.FC = () => {
-  const {
-    container,
-    coupon,
-    gridItem,
-    heading,
-    logo,
-    root
-  } = useHeaderStyles();
+export const Header: React.FC<Props> = ({ containerClassName }) => {
+  const { coupon, gridItem, heading, logo, root } = useHeaderStyles();
   const [openModal, setOpenModal] = React.useState(false);
   return (
     <DOM
       className={root}
-      containerClassName={container}
+      containerClassName={containerClassName}
       couponClassName={coupon}
       gridItemClassName={gridItem}
       headingClassName={heading}

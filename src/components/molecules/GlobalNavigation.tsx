@@ -7,6 +7,7 @@ import classNames from 'classnames';
 import React from 'react';
 import getLinkAttributes from '~/utils/getLinkAttributes';
 import { NavigationType } from '~/utils/globalNavigationSource';
+import useAllowRoute from '~/utils/useAllowRoute';
 
 // TODO: HERE CODES ARE NOT ELEGANT, SO REFACTOR ME :/
 
@@ -55,17 +56,19 @@ const renderButtons = ({
 }: Pick<Props, 'footer' | 'source'>): React.ReactNodeArray | undefined => {
   const { root } = useButtonStyles(!!footer);
   const variant: Variant = footer ? 'text' : 'contained';
+  const allowRoute = useAllowRoute();
   return source?.map(([href, children]) => {
     const { absolute, rel, target } = getLinkAttributes(href);
+    const useRouter = allowRoute && !absolute;
     return (
       <Button
         className={root}
-        component={absolute ? 'a' : RouterLink}
+        component={useRouter ? RouterLink : 'a'}
         key={children}
-        href={absolute ? href : undefined}
+        href={useRouter ? undefined : href}
         rel={rel}
         target={target}
-        to={absolute ? undefined : href}
+        to={useRouter ? href : undefined}
         variant={variant}
       >
         {children}
