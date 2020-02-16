@@ -166,7 +166,7 @@ const Root = ({ Body, children, Head, Html, state }) => (
     latitude={34.448272}
     locale="ja_JP"
     longitude={131.409517}
-    norobot={state.stage === 'prod' && !state.staging}
+    norobot={state.stage !== 'prod' || state.staging}
     path={state.route && state.route.path}
     title="萩池々茶屋"
   >
