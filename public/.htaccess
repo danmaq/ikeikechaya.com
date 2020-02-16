@@ -1,4 +1,5 @@
 <IfModule mod_mime.c>
+  AddType text/javascript .js
   AddType image/webp .webp
 </IfModule>
 
@@ -16,16 +17,16 @@ ErrorDocument 404 /404.html
   ExpiresByType image/x-icon "access plus 2 day"
 
   # Video
-  ExpiresByType video/mp4 "access plus 2 day"
-  ExpiresByType video/mpeg "access plus 2 day"
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType video/mpeg "access plus 1 year"
 
   # CSS, JavaScript
-  ExpiresByType text/css "access plus 1 day"
-  ExpiresByType text/javascript "access plus 1 day"
-  ExpiresByType application/javascript "access plus 1 day"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
 
   # Others
-  ExpiresByType application/pdf "access plus 2 day"
+  ExpiresByType application/pdf "access plus 1 year"
   ExpiresByType application/x-shockwave-flash "access plus 1 year"
 </IfModule>
 
