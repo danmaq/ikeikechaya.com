@@ -1,4 +1,6 @@
-export type NavigationType = [string, string];
+import React from 'react';
+
+export type NavigationType = [string, React.ReactNode];
 
 const commonData: readonly NavigationType[] = [
   ['/', 'ホーム'],
@@ -16,5 +18,5 @@ export const headerData2: readonly NavigationType[] = [
 
 export const footerData: readonly NavigationType[] = [
   ...commonData,
-  ['http://www.chuosuisan.com/', '会社概要']
+  ['https://github.com/danmaq/ikeikechaya.com', 'GitHub']
 ];
