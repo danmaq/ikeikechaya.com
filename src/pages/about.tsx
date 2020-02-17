@@ -12,7 +12,10 @@ const Page: React.FC = () => {
     <>
       <ArticleWithImage
         align="right"
-        boxes={[{ height: '37%', width: '42%' }]}
+        boxes={[
+          { height: '20%', width: '36%' },
+          { height: '17%', width: '42%' }
+        ]}
         image="/images/about/cont01.jpg"
       >
         <Article>
