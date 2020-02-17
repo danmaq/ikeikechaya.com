@@ -2,37 +2,37 @@ import Link, { LinkTypeMap } from '@material-ui/core/Link';
 import { DefaultComponentProps } from '@material-ui/core/OverridableComponent';
 import { Link as RouterLink } from '@reach/router';
 import React from 'react';
-import useLinkProps, {
-  AnchorReturnType,
-  RouterReturnType
-} from '~/utils/useLinkProps';
+import getLinkAttributes from '~/utils/getLinkAttributes';
+import useAllowRoute from '~/utils/useAllowRoute';
 
-export type DOMProps = Pick<
-  DefaultComponentProps<LinkTypeMap>,
-  'className' | 'color'
-> &
-  (AnchorReturnType | RouterReturnType);
-
-export interface Props extends Pick<DOMProps, 'className' | 'color'> {
-  href?: string;
+export interface DOMProps
+  extends Pick<
+    DefaultComponentProps<LinkTypeMap>,
+    'className' | 'color' | 'rel' | 'target'
+  > {
+  allowRoute?: boolean;
+  href: string;
 }
 
+export type Props = Pick<DOMProps, 'className' | 'color' | 'href'>;
+
 export const DOM: React.FC<DOMProps> = ({
+  allowRoute,
   children,
   className,
   color,
+  href,
   rel,
-  target,
-  ...rest
+  target
 }) => (
   <Link
     className={className}
     color={color}
-    component={rest.allowRoute ? RouterLink : 'a'}
-    href={rest.allowRoute ? undefined : rest.href}
+    component={allowRoute ? RouterLink : 'a'}
+    href={allowRoute ? undefined : href}
     rel={rel}
     target={target}
-    to={rest.allowRoute ? rest.to : undefined}
+    to={allowRoute ? href : undefined}
   >
     {children}
   </Link>
@@ -44,15 +44,16 @@ const TextLink: React.FC<Props> = ({
   color = 'error',
   href
 }) => {
-  const { rel, target, ...rest } = useLinkProps(href);
+  const { absolute, rel, target } = getLinkAttributes(href);
+  const allowRoute = useAllowRoute() && !absolute;
   return (
     <DOM
+      allowRoute={allowRoute}
       className={className}
       color={color}
+      href={href}
       rel={rel}
       target={target}
-      // eslint-disable-next-line react/jsx-props-no-spreading
-      {...rest}
     >
       {children}
     </DOM>
