@@ -18,5 +18,5 @@ export const headerData2: readonly NavigationType[] = [
 
 export const footerData: readonly NavigationType[] = [
   ...commonData,
-  ['http://www.chuosuisan.com/', '会社概要']
+  ['https://github.com/danmaq/ikeikechaya.com', 'GitHub']
 ];

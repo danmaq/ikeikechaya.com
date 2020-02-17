@@ -5,7 +5,6 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
 import Article from '~/components/atoms/Article';
-import TextLink from '~/components/atoms/TextLink';
 import FigureWithImages from '~/components/molecules/FigureWithImages';
 
 export interface DOMProps extends Pick<DrawerProps, 'className' | 'open'> {
@@ -43,10 +42,9 @@ export const DOM: React.FC<DOMProps> = ({
         ]}
       />
       <Article>
-        萩池々茶屋を経営しております
-        <TextLink href="http://www.daigoryoeimaru.co.jp/">第五良栄丸</TextLink>
-        は、2010
-        年度梅貝水揚高日本一の漁船網元です。梅貝のおいしさをより多くの方々に知っていただくために、日々様々な取り組みや企画に奮闘しております。萩池々茶屋でも梅貝を使った料理をご用意しておりますので、是非一度ご来店ください。
+        萩池々茶屋を経営しております“第五良栄丸”は、2010年度梅貝水揚高日本一の漁船網元です。
+        梅貝のおいしさをより多くの方々に知っていただくために、日々様々な取り組みや企画に奮闘しております。
+        萩池々茶屋でも梅貝を使った料理をご用意しておりますので、是非一度ご来店ください。
       </Article>
       <Grid container justify="center">
         <Grid item md={6}>
