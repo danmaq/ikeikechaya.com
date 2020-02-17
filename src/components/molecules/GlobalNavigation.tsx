@@ -64,7 +64,7 @@ const renderButtons = ({
       <Button
         className={root}
         component={useRouter ? RouterLink : 'a'}
-        key={children}
+        key={href}
         href={useRouter ? undefined : href}
         rel={rel}
         target={target}

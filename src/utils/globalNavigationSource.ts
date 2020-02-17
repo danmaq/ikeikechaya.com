@@ -1,4 +1,6 @@
-export type NavigationType = [string, string];
+import React from 'react';
+
+export type NavigationType = [string, React.ReactNode];
 
 const commonData: readonly NavigationType[] = [
   ['/', 'ホーム'],
