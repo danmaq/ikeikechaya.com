@@ -124,7 +124,7 @@ const DOM = ({
         <meta property="og:url" content={url} />
         <meta property="op:markup_version" content="v1.0" />
         <link rel="apple-touch-icon" sizes="128x128" href={icon} />
-        <link rel="author" href="https://twitter.com/danmaq" />
+        <link rel="author" href="https://github.com/danmaq/ikeikechaya.com" />
         <link rel="icon" sizes="128x128" href={icon} />
         <link rel="manifest" href="/manifest.webmanifest" />
         <link
