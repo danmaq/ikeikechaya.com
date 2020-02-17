@@ -9,14 +9,11 @@ const commonData: readonly NavigationType[] = [
   ['/access/', 'ご予約・アクセス']
 ];
 
-export const headerData: readonly NavigationType[] = [...commonData];
+export const headerData: readonly NavigationType[] = commonData;
 
 export const headerData2: readonly NavigationType[] = [
   ['https://note.com/daigoryoeimaru/m/m5b942908d95b', '水産加工場'],
   ['https://note.com/daigoryoeimaru/n/n11849a192b6d', '船員宿']
 ];
 
-export const footerData: readonly NavigationType[] = [
-  ...commonData,
-  ['https://github.com/danmaq/ikeikechaya.com', 'GitHub']
-];
+export const footerData: readonly NavigationType[] = commonData;
