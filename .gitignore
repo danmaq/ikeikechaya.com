@@ -1,5 +1,8 @@
 # ###### . Project ####################
 
+# Local Netlify folder
+.netlify
+
 # React Static
 /artifacts/
 /dist/
@@ -171,6 +174,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-# Local Netlify folder
-.netlify

@@ -41,9 +41,14 @@ ErrorDocument 404 /404.html
   Header set X-UA-Compatible "IE=Edge" env=ie
 </IfModule>
 
+Options +FollowSymLinks
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteCond %{HTTP_ACCEPT} image/webp
   RewriteCond %{SCRIPT_FILENAME}.webp -f
   RewriteRule .(jpe?g|png|gif)$ %{SCRIPT_FILENAME}.webp [T=image/webp]
+
+  RewriteCond %{HTTP_HOST} ^www\.ikeikechaya\.com$
+  RewriteRule ^(.*)$ http://ikeikechaya.com/$1 [R=301,L]
 </IfModule>
