@@ -13,8 +13,10 @@ const Page: React.FC = () => {
       <ArticleWithImage
         align="right"
         boxes={[
-          { height: '20%', width: '36%' },
-          { height: '17%', width: '42%' }
+          { height: '12%', width: '36%' },
+          { height: '8%', width: '35%' },
+          { height: '16%', width: '42%' },
+          { height: '1%', width: '25%' }
         ]}
         image="/images/about/cont01.jpg"
       >
@@ -26,7 +28,7 @@ const Page: React.FC = () => {
       </ArticleWithImage>
       <ArticleWithImage
         align="left"
-        boxes={[{ height: '26%', width: '42%' }]}
+        boxes={[{ height: '27%', width: '42%' }]}
         image="/images/about/cont03.jpg"
       >
         <Article>
