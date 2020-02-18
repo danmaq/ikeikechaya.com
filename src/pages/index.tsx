@@ -37,8 +37,11 @@ const Page: React.FC = () => (
     <ArticleWithImage
       align="right"
       boxes={[
-        { height: '16%', width: '43%' },
-        { height: '17%', width: '36%' }
+        { height: '10%', width: '44%' },
+        { height: '7%', width: '43%' },
+        { height: '4%', width: '36%' },
+        { height: '10%', width: '37%' },
+        { height: '2%', width: '26%' }
       ]}
       image="/images/home/copy_back.jpg"
     >
