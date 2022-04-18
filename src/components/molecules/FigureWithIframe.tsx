@@ -1,4 +1,5 @@
-import { makeStyles, Theme } from '@material-ui/core/styles';
+import type { Theme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import React from 'react';
 
@@ -25,7 +26,7 @@ export const DOM: React.FC<DOMProps> = ({
   height,
   src,
   title,
-  width
+  width,
 }) => (
   <figure className={className}>
     <iframe
@@ -52,9 +53,9 @@ const useStyles = makeStyles<Theme, StylesProps>({
       width: '100%',
       height: '100%',
       left: 0,
-      top: 0
-    }
-  })
+      top: 0,
+    },
+  }),
 });
 
 const FigureWithIframe: React.FC<Props> = ({
@@ -62,7 +63,7 @@ const FigureWithIframe: React.FC<Props> = ({
   height,
   src,
   title,
-  width
+  width,
 }) => {
   const { root } = useStyles({ heightRatio: height / width });
   return (

@@ -12,6 +12,11 @@
     "paths": {
       "~/*": ["src/*"]
     },
+    "plugins": [
+      {
+        "name": "typescript-eslint-language-service"
+      }
+    ],
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,

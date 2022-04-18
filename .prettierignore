@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/linux,macos,node,serverless,sublimetext,vim,visualstudiocode,windows
-# Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,node,serverless,sublimetext,vim,visualstudiocode,windows
+# Created by https://www.toptal.com/developers/gitignore/api/linux,macos,node,sublimetext,vim,visualstudiocode,windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,node,sublimetext,vim,visualstudiocode,windows
 
 ### Linux ###
 *~
@@ -190,10 +190,6 @@ public
 # SvelteKit build / generate output
 .svelte-kit
 
-### Serverless ###
-# Ignore build directory
-.serverless
-
 ### SublimeText ###
 # Cache files for Sublime Text
 *.tmlanguage.cache
@@ -294,21 +290,39 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/linux,macos,node,serverless,sublimetext,vim,visualstudiocode,windows
+# End of https://www.toptal.com/developers/gitignore/api/linux,macos,node,sublimetext,vim,visualstudiocode,windows
+
+### THE PROJECT SPECIFIES #################################################
 
 ### THE PROJECT SPECIFIES #################################################
 
 ### Node ###
-# JSON
-*.json
+# Husky
+.husky/_
+
+# Ignorefiles
+.*ignore
 
 # React Static
 artifacts/
 tmp/
 
-### Texts ###
+# Version managers
+.node-version
+.nvmrc
+.tool-versions
+
+# Yarn v2
+.yarn
+yarn.lock
+*.pro
+
+### Text ###
 LICENSE
 
 ### Others ###
+# EditorConfig
+.editorconfig
+
 # Local Netlify folder
 .netlify

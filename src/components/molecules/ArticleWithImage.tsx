@@ -1,5 +1,6 @@
 import Box from '@material-ui/core/Box';
-import { makeStyles, Theme } from '@material-ui/core/styles';
+import type { Theme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import React from 'react';
 
@@ -28,7 +29,7 @@ export const DOM: React.FC<DOMProps> = ({
   boxesClassName,
   boxStyles,
   className,
-  children
+  children,
 }) => (
   <section className={className}>
     {boxStyles?.map(({ children: boxChildren, ...style }, index) => (
@@ -49,8 +50,8 @@ const useStyles = makeStyles<Theme, StylesProps>({
     backgroundSize: '100% auto',
     overflow: 'auto',
     paddingTop: '7%',
-    paddingBottom: '2rem'
-  })
+    paddingBottom: '2rem',
+  }),
 });
 
 const ArticleWithImage: React.FC<Props> = ({
@@ -58,14 +59,14 @@ const ArticleWithImage: React.FC<Props> = ({
   boxes,
   children,
   className,
-  image
+  image,
 }) => {
   const { placeholder, root } = useStyles({ align, image });
   const boxStyles = boxes?.map<React.PropsWithChildren<React.CSSProperties>>(
     ({ children: boxChildren, height, width }) => ({
       children: boxChildren,
       paddingTop: height,
-      width
+      width,
     })
   );
   return (

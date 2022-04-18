@@ -40,7 +40,7 @@ const DOM = ({
   longitude,
   norobot,
   path,
-  title
+  title,
 }) => {
   const color = '#0C0C88';
   const desc = !!(description || descriptionShort);
@@ -144,7 +144,7 @@ DOM.defaultProps = {
   baseUrl: '',
   description: '',
   descriptionShort: '',
-  path: ''
+  path: '',
 };
 DOM.displayName = 'RootDOM';
 

@@ -1,4 +1,5 @@
-import Grid, { GridSize } from '@material-ui/core/Grid';
+import type { GridSize } from '@material-ui/core/Grid';
+import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -31,7 +32,7 @@ export interface Props {
 
 export const DOM: React.FC<DOMProps> = ({ iconClassName, items }) => (
   <List component="section">
-    {items?.map(item => (
+    {items?.map((item) => (
       <ListItem
         component={Link}
         key={item.caption}
@@ -61,18 +62,18 @@ const useStyles = makeStyles({
   icon: {
     width: '5rem',
     height: '5rem',
-    '& > img': { width: '100%', height: 'auto' }
-  }
+    '& > img': { width: '100%', height: 'auto' },
+  },
 });
 
 const getListAndWidth = ({
   cols = 2,
-  items
+  items,
 }: Pick<Props, 'cols' | 'items'>) => {
   const splitted = partition(
     items?.map<[Item, number]>((item, index) => [item, index]) ?? [],
     ([, i]) => i % cols === 0
-  ).map(item => item.map(([v]) => v));
+  ).map((item) => item.map(([v]) => v));
   const width = Math.max(Math.floor(12 / cols), 1) as GridSize;
   return { splitted, width };
 };

@@ -1,5 +1,5 @@
 /* eslint no-param-reassign: off */
-/* eslint react/jsx-filename-extension: warn */
+/* eslint react/jsx-filename-extension: off */
 
 import { ServerStyleSheets } from '@material-ui/core/styles';
 import React from 'react';
@@ -17,9 +17,9 @@ export default () => ({
 
   /** @type {(elements: React.ComponentType[], context: { meta: Meta }) => React.ComponentType[]} */
   headElements: (elements, { meta }) => [
-    <meta charSet="UTF-8" />,
+    <meta charSet="UTF-8" key={0} />,
     ...elements,
-    meta.muiSheets && meta.muiSheets.getStyleElement()
+    meta.muiSheets && meta.muiSheets.getStyleElement(),
   ],
 
   /** @type {(config: Configuration, options: RouteFlags) => Configuration} */
@@ -29,6 +29,6 @@ export default () => ({
     devtool: 'source-map',
     entry: Array.isArray(entry)
       ? ['@babel/polyfill', ...entry]
-      : ['@babel/polyfill', entry]
-  })
+      : ['@babel/polyfill', entry],
+  }),
 });

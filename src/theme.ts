@@ -8,31 +8,31 @@ export default createMuiTheme({
           {
             fontFamily: 'IkeIke Gothic',
             fontWeight: 100,
-            src: 'local("Yu Gothic Medium")'
+            src: 'local("Yu Gothic Medium")',
           },
           {
             fontFamily: 'IkeIke Gothic',
             fontWeight: 200,
-            src: 'local("Yu Gothic Medium")'
+            src: 'local("Yu Gothic Medium")',
           },
           {
             fontFamily: 'IkeIke Gothic',
             fontWeight: 300,
-            src: 'local("Yu Gothic Medium")'
+            src: 'local("Yu Gothic Medium")',
           },
           {
             fontFamily: 'IkeIke Gothic',
             fontWeight: 400,
-            src: 'local("Yu Gothic Medium")'
+            src: 'local("Yu Gothic Medium")',
           },
           {
             fontFamily: 'IkeIke Gothic',
             fontWeight: 'bold',
-            src: 'local("Yu Gothic Medium")'
-          }
-        ]
-      }
-    }
+            src: 'local("Yu Gothic Medium")',
+          },
+        ],
+      },
+    },
   },
   palette: { background: { default: 'rgb(253, 253, 251)' } },
   typography: {
@@ -49,7 +49,7 @@ export default createMuiTheme({
       '"Apple Color Emoji"',
       '"Segoe UI Emoji"',
       '"Segoe UI Symbol"',
-      '"Noto Sans Emoji"'
-    ].join(',')
-  }
+      '"Noto Sans Emoji"',
+    ].join(','),
+  },
 });

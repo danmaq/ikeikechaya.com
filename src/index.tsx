@@ -13,14 +13,14 @@ if (typeof document !== 'undefined') {
   const enabledSentry = !/(localhost|127\.0\.0\.1)/.test(host);
   Sentry.init({
     dsn: 'https://50b5b88a078a4c33853096b39a458177@sentry.io/2476275',
-    enabled: enabledSentry
+    enabled: enabledSentry,
   });
 
   const target = document.getElementById('root');
   const renderMethod = target?.hasChildNodes()
     ? ReactDOM.hydrate
     : ReactDOM.render;
-  const render = (Comp: Function) => {
+  const render = (Comp: React.ComponentType) => {
     renderMethod(
       <AppContainer>
         <Comp />

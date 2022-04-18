@@ -22,7 +22,7 @@ export const DOM: React.FC<DOMProps> = ({
   onClick,
   onHover,
   onLeave,
-  src
+  src,
 }) => (
   <IconButton
     className={className}
@@ -45,16 +45,16 @@ const useStyles = makeStyles({
       width: '80%',
       height: 'auto',
       transitionProperty: 'rotate',
-      transitionDuration: '0.5s'
-    }
+      transitionDuration: '0.5s',
+    },
   },
   rotate: {
     '& img': {
       transform: 'rotate(-15deg)',
       transitionProperty: 'rotate',
-      transitionDuration: '0.5s'
-    }
-  }
+      transitionDuration: '0.5s',
+    },
+  },
 });
 
 const useOnClick = (action: Props['action']) =>

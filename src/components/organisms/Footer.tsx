@@ -19,7 +19,7 @@ export interface Props {
 export const DOM: React.FC<DOMProps> = ({
   children,
   className,
-  lineClassName
+  lineClassName,
 }) => (
   <Container className={className} component="footer" maxWidth="md">
     <hr className={lineClassName} />
@@ -38,7 +38,7 @@ DOM.displayName = 'FooterDOM';
 
 const useStyles = makeStyles({
   divider: { border: '1px solid rgb(217, 217, 217)', margin: 0 },
-  root: { paddingBottom: 'env(safe-area-inset-bottom)' }
+  root: { paddingBottom: 'env(safe-area-inset-bottom)' },
 });
 
 export const Footer: React.FC<Props> = ({ className }) => {

@@ -1,6 +1,7 @@
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
-import Drawer, { DrawerProps } from '@material-ui/core/Drawer';
+import type { DrawerProps } from '@material-ui/core/Drawer';
+import Drawer from '@material-ui/core/Drawer';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
@@ -20,7 +21,7 @@ export const DOM: React.FC<DOMProps> = ({
   contentClassName,
   imageClassName,
   onClose,
-  open
+  open,
 }) => (
   <Drawer
     anchor="top"
@@ -37,8 +38,8 @@ export const DOM: React.FC<DOMProps> = ({
             alt: '2010 年度 水揚高 日本一!!',
             src: '/images/modal/heading.png',
             width: 402,
-            height: 45
-          }
+            height: 45,
+          },
         ]}
       />
       <Article>
@@ -82,7 +83,7 @@ DOM.displayName = 'ConchModalDOM';
 const useStyles = makeStyles({
   container: { textAlign: 'center', paddingBottom: '3rem' },
   image: { width: '100%', height: 'auto' },
-  root: { '& > .MuiDrawer-paper': { backgroundColor: 'rgb(245, 246, 241)' } }
+  root: { '& > .MuiDrawer-paper': { backgroundColor: 'rgb(245, 246, 241)' } },
 });
 
 const ConchModal: React.FC<Props> = ({ onClose, open }) => {

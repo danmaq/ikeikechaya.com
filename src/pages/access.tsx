@@ -119,8 +119,8 @@ const Page: React.FC = () => {
               alt: 'マップ',
               src: '/images/access/map.jpg',
               width: 600,
-              height: 539
-            }
+              height: 539,
+            },
           ]}
         />
         <FigureWithImages
@@ -129,20 +129,20 @@ const Page: React.FC = () => {
               alt: '駐車場',
               src: '/images/access/park.jpg',
               width: 3840,
-              height: 2160
+              height: 2160,
             },
             {
               alt: '道順 1',
               src: '/images/access/route1.png',
               width: 720,
-              height: 540
+              height: 540,
             },
             {
               alt: '道順 2',
               src: '/images/access/route2.png',
               width: 720,
-              height: 540
-            }
+              height: 540,
+            },
           ]}
         >
           萩池々茶屋では、越ケ浜漁港裏に大型バス駐車場、無料駐車場をご用意しておます。

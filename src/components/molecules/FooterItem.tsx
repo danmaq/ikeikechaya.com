@@ -1,5 +1,6 @@
 import React from 'react';
-import Grid, { GridSize } from '@material-ui/core/Grid';
+import type { GridSize } from '@material-ui/core/Grid';
+import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import Conch from '~/components/atoms/Conch';
@@ -19,7 +20,7 @@ export const DOM: React.FC<DOMProps> = ({
   className,
   conchSize,
   children,
-  mainSize
+  mainSize,
 }) => (
   <Grid className={className} container>
     <Grid item xs={mainSize}>
@@ -42,7 +43,7 @@ const FooterItem: React.FC<Props> = ({
   className,
   conchSize,
   children,
-  mainSize
+  mainSize,
 }) => {
   const { root } = useStyles();
   return (

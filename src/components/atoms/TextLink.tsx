@@ -1,5 +1,6 @@
-import Link, { LinkTypeMap } from '@material-ui/core/Link';
-import { DefaultComponentProps } from '@material-ui/core/OverridableComponent';
+import type { LinkTypeMap } from '@material-ui/core/Link';
+import Link from '@material-ui/core/Link';
+import type { DefaultComponentProps } from '@material-ui/core/OverridableComponent';
 import { Link as RouterLink } from '@reach/router';
 import React from 'react';
 import getLinkAttributes from '~/utils/getLinkAttributes';
@@ -23,7 +24,7 @@ export const DOM: React.FC<DOMProps> = ({
   color,
   href,
   rel,
-  target
+  target,
 }) => (
   <Link
     className={className}
@@ -42,7 +43,7 @@ const TextLink: React.FC<Props> = ({
   children,
   className,
   color = 'error',
-  href
+  href,
 }) => {
   const { absolute, rel, target } = getLinkAttributes(href);
   const allowRoute = useAllowRoute() && !absolute;

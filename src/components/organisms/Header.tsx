@@ -3,11 +3,11 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
+import ConchModal from './ConchModal';
 import Conch from '~/components/atoms/Conch';
 import TextLink from '~/components/atoms/TextLink';
 import GlobalNavigation from '~/components/molecules/GlobalNavigation';
 import { headerData, headerData2 } from '~/utils/globalNavigationSource';
-import ConchModal from './ConchModal';
 
 export interface DOMProps {
   className?: string;
@@ -31,7 +31,7 @@ export const DOM: React.FC<DOMProps> = ({
   logoClassName,
   onClickConch,
   onCloseModal,
-  openModal
+  openModal,
 }) => (
   <>
     <AppBar component="header" className={className} position="static">
@@ -87,8 +87,8 @@ const useHeaderStyles = makeStyles(() => ({
     backgroundImage: 'url("/images/header/bg.jpg")',
     backgroundSize: 'contain',
     fontSize: '110%',
-    padding: '1.2rem 0 1.2rem'
-  }
+    padding: '1.2rem 0 1.2rem',
+  },
 }));
 
 export const Header: React.FC<Props> = ({ containerClassName }) => {
@@ -102,7 +102,7 @@ export const Header: React.FC<Props> = ({ containerClassName }) => {
       gridItemClassName={gridItem}
       headingClassName={heading}
       logoClassName={logo}
-      onClickConch={React.useCallback(() => setOpenModal(v => !v), [])}
+      onClickConch={React.useCallback(() => setOpenModal((v) => !v), [])}
       onCloseModal={React.useCallback(() => setOpenModal(false), [])}
       openModal={openModal}
     />
