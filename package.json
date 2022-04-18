@@ -1,23 +1,18 @@
 {
   "name": "ikeikechaya.com",
   "version": "0.1.0",
-  "description": "Official website for ikeikechaya.com",
-  "license": "Apache-2.0",
   "private": true,
-  "author": "danmaq",
+  "description": "Official website for ikeikechaya.com",
   "keywords": [
     "website",
     "fishery",
     "restaurant"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git@danmaq.github.com:danmaq/ikeikechaya.com.git"
-  },
-  "bugs": {
-    "url": "https://github.com/danmaq/ikeikechaya.com/issues"
-  },
-  "homepage": "https://github.com/danmaq/ikeikechaya.com#readme",
+  "homepage": "http://ikeikechaya.com",
+  "bugs": "https://github.com/danmaq/ikeikechaya.com/issues",
+  "repository": "github:danmaq/ikeikechaya.com",
+  "license": "Apache-2.0",
+  "author": "danmaq",
   "scripts": {
     "build": "NODE_ENV=production react-static build",
     "prepare": "path-exists .git && husky install || exit 0",
@@ -26,10 +21,6 @@
     "stage": "react-static build --staging",
     "test": "run-s test:lint",
     "test:lint": "eslint --fix './**/*' || true"
-  },
-  "engines": {
-    "node": ">=14.19.1",
-    "npm": ">=6.14.6"
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.3",
@@ -77,5 +68,9 @@
     "path-exists-cli": "^2.0.0",
     "prettier": "^1.19.1",
     "typescript": "^3.7.5"
+  },
+  "engines": {
+    "node": ">=14.19.1",
+    "npm": ">=6.14.6"
   }
 }
