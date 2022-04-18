@@ -32,8 +32,8 @@ const useStyles = makeStyles({
   root: {
     marginLeft: 0,
     marginRight: 0,
-    '& > img': { height: 'auto', width: '100%' }
-  }
+    '& > img': { height: 'auto', width: '100%' },
+  },
 });
 
 const FigureWithImages: React.FC<Props> = ({ children, className, images }) => (

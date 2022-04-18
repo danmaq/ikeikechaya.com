@@ -6,8 +6,8 @@ import classNames from 'classnames';
 import React from 'react';
 import { Root, Routes } from 'react-static';
 import Loading from './components/atoms/Loading';
-import Footer from './components/organisms/Footer';
-import Header from './components/organisms/Header';
+import { Footer } from './components/organisms/Footer';
+import { Header } from './components/organisms/Header';
 import theme from './theme';
 
 export interface DOMProps {
@@ -19,7 +19,7 @@ export interface DOMProps {
 const DOM: React.FC<DOMProps> = ({
   containerClassName,
   footerClassName,
-  headerClassName
+  headerClassName,
 }) => (
   <Root>
     <ThemeProvider theme={theme}>
@@ -44,8 +44,8 @@ const useStyles = makeStyles({
   innerContainer: { paddingTop: '2rem' },
   safeArea: {
     paddingLeft: 'env(safe-area-inset-left)',
-    paddingRight: 'env(safe-area-inset-right)'
-  }
+    paddingRight: 'env(safe-area-inset-right)',
+  },
 });
 
 const App: React.FC = () => {

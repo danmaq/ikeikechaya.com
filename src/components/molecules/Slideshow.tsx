@@ -1,4 +1,5 @@
-import { makeStyles, Theme } from '@material-ui/core/styles';
+import type { Theme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import React from 'react';
 
@@ -31,12 +32,12 @@ const useStyles = makeStyles<Theme, StylesProps>({
   image: {
     opacity: '1 !important',
     transitionProperty: 'opacity',
-    transitionDuration: '4s'
+    transitionDuration: '4s',
   },
   imageFadeOut: {
     opacity: '0.5 !important',
     transitionProperty: 'opacity',
-    transitionDuration: '4s'
+    transitionDuration: '4s',
   },
   root: ({ heightRatio }) => ({
     marginLeft: 0,
@@ -51,9 +52,9 @@ const useStyles = makeStyles<Theme, StylesProps>({
       width: '100%',
       height: '100%',
       left: 0,
-      top: 0
-    }
-  })
+      top: 0,
+    },
+  }),
 });
 
 const useLoopIndex = (length: number) => {
@@ -64,7 +65,7 @@ const useLoopIndex = (length: number) => {
       if (first) {
         setFirst(false);
       } else {
-        setIndex(i => (i + 1) % length);
+        setIndex((i) => (i + 1) % length);
       }
     }, 5000);
     return () => clearInterval(interval);
@@ -78,7 +79,7 @@ const Slideshow: React.FC<Props> = ({ className, srcs, width, height }) => {
   const { image, imageFadeOut, root } = useStyles({
     heightRatio: height / width,
     index,
-    length: concreted.length ?? 1
+    length: concreted.length ?? 1,
   });
   return (
     <DOM className={classNames(root, className)}>
@@ -88,7 +89,7 @@ const Slideshow: React.FC<Props> = ({ className, srcs, width, height }) => {
           alt=""
           className={classNames({
             [image]: i === index,
-            [imageFadeOut]: i === index - 1
+            [imageFadeOut]: i === index - 1,
           })}
           src={src}
           width={width}

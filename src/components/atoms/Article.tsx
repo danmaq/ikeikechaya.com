@@ -1,6 +1,7 @@
-import { DefaultComponentProps } from '@material-ui/core/OverridableComponent';
+import type { DefaultComponentProps } from '@material-ui/core/OverridableComponent';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography, { TypographyTypeMap } from '@material-ui/core/Typography';
+import type { TypographyTypeMap } from '@material-ui/core/Typography';
+import Typography from '@material-ui/core/Typography';
 import classNames from 'classnames';
 import React from 'react';
 
@@ -14,8 +15,8 @@ const useStyles = makeStyles({
     letterSpacing: '0.05rem',
     lineHeight: '190%',
     paddingBottom: '1rem',
-    textAlign: 'left'
-  }
+    textAlign: 'left',
+  },
 });
 
 const Article: React.FC<Props> = ({ children, className, ...rest }) => {

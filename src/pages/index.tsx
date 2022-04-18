@@ -3,7 +3,8 @@ import React from 'react';
 import Article from '~/components/atoms/Article';
 import TextLink from '~/components/atoms/TextLink';
 import ArticleWithImage from '~/components/molecules/ArticleWithImage';
-import LinkList, { Item } from '~/components/molecules/LinkList';
+import type { Item } from '~/components/molecules/LinkList';
+import LinkList from '~/components/molecules/LinkList';
 import Slideshow from '~/components/molecules/Slideshow';
 
 const srcs = Array.from(
@@ -19,7 +20,7 @@ const source: Item[] = [
     href: 'http://www.hagishi.com/search/detail.php?d=900047',
     icon: '/images/home/link_tsubaki.png',
     width: 81,
-    height: 81
+    height: 81,
   },
   {
     caption: '明神池提携ホテル',
@@ -27,8 +28,8 @@ const source: Item[] = [
     href: 'http://www.hagikan.com/',
     icon: '/images/home/link_hotel.jpg',
     width: 200,
-    height: 159
-  }
+    height: 159,
+  },
 ];
 
 const Page: React.FC = () => (
@@ -41,7 +42,7 @@ const Page: React.FC = () => (
         { height: '7%', width: '43%' },
         { height: '4%', width: '36%' },
         { height: '10%', width: '37%' },
-        { height: '2%', width: '26%' }
+        { height: '2%', width: '26%' },
       ]}
       image="/images/home/copy_back.jpg"
     >

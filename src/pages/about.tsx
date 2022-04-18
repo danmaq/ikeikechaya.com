@@ -16,7 +16,7 @@ const Page: React.FC = () => {
           { height: '12%', width: '36%' },
           { height: '8%', width: '35%' },
           { height: '16%', width: '42%' },
-          { height: '1%', width: '25%' }
+          { height: '1%', width: '25%' },
         ]}
         image="/images/about/cont01.jpg"
       >
@@ -52,8 +52,8 @@ const Page: React.FC = () => {
               />
             ),
             height: '0%',
-            width: '42%'
-          }
+            width: '42%',
+          },
         ]}
         image="/images/about/cont04.png"
       >

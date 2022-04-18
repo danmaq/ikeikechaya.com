@@ -19,7 +19,7 @@ export const DOM: React.FC<DOMProps> = ({
   children,
   heading,
   headingClassName,
-  id
+  id,
 }) => (
   <section className={className} id={id}>
     {!!heading && (
@@ -35,16 +35,16 @@ const useStyles = makeStyles({
   heading: {
     color: 'rgb(232, 112, 159)',
     fontFamily: 'serif',
-    fontWeight: 900
+    fontWeight: 900,
   },
-  root: { paddingBottom: '2rem' }
+  root: { paddingBottom: '2rem' },
 });
 
 const ArticleWithHeading: React.FC<Props> = ({
   children,
   className,
   heading,
-  id
+  id,
 }) => {
   const { heading: headingClassName, root } = useStyles();
   return (
