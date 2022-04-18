@@ -5,7 +5,7 @@ export type NavigationType = [string, React.ReactNode];
 const commonData: readonly NavigationType[] = [
   ['/', 'ホーム'],
   ['/about/', 'お店について'],
-  ['/menu/', 'メニュー'],
+  ['https://note.com/daigoryoeimaru/n/n095038a01bc0?magazine_key=m3f803a3f69c4', 'メニュー'],
   ['/access/', 'ご予約・アクセス']
 ];
 
