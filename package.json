@@ -20,6 +20,7 @@
   "homepage": "https://github.com/danmaq/ikeikechaya.com#readme",
   "scripts": {
     "build": "NODE_ENV=production react-static build",
+    "prepare": "path-exists .git && husky install || exit 0",
     "serve": "serve dist -p 3000 -s",
     "start": "react-static start",
     "stage": "react-static build --staging",
@@ -69,7 +70,9 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-react-hooks": "^2.3.0",
+    "husky": "^7.0.4",
     "npm-run-all": "^4.1.5",
+    "path-exists-cli": "^2.0.0",
     "prettier": "^1.19.1",
     "typescript": "^3.7.5"
   }
