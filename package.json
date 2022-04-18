@@ -48,6 +48,8 @@
     "react-static-plugin-typescript": "^7.2.3"
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
     "@types/classnames": "^2.2.9",
     "@types/lodash.partition": "^4.6.6",
     "@types/reach__router": "^1.2.6",
