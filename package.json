@@ -27,7 +27,8 @@
     "test:lint": "eslint --fix './**/*' || true"
   },
   "engines": {
-    "node": ">= 13"
+    "node": ">=14.19.1",
+    "npm": ">=6.14.6"
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.3",
